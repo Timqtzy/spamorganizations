@@ -1,4 +1,4 @@
-import logo from "../assets/SpamLogo.png";
+import logo from "../../public/SpamLogo.png";
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "../App.css";

@@ -90,7 +90,7 @@ function Home() {
           </div>
         </section>
       </div> */}
-      <div className="py-24 mx-auto bg-gray-100">
+      <div className="py-12 sm:py-24 mx-auto bg-gray-100">
         <section className="text-gray-600 body-font max-w-screen-xl mx-auto">
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-20">
@@ -101,7 +101,7 @@ function Home() {
                 Empower your journalism with SPAM
               </h1>
             </div>
-            <div className="flex flex-wrap -m-4">
+            <div className="flex flex-wrap m-4">
               <div className="p-4 smd:w-1/3">
                 <div className="flex rounded-lg h-full bg-white p-8 flex-col transition-all duration-300 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:-translate-y-1">
                   <div className="flex items-center mb-3">

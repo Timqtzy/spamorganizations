@@ -1,4 +1,4 @@
-import SpamLogo from "../assets/SpamLogo.png";
+import logo from "../assets/SpamLogo.png";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -98,7 +98,7 @@ function Footer() {
         <div className="bg-gray-800">
           <div className="container px-5 py-6 max-w-screen-xl mx-auto flex items-center sm:flex-row flex-col">
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"> <img
-                src="/src/assets/SpamLogo.png" alt="Spam Logo" className="w-10 h-10 text-white rounded-full"/>
+                src={logo} alt="Spam Logo" className="w-10 h-10 text-white rounded-full"/>
               <span className="ml-3 text-xl text-customRed">SPAM</span> </a>
             <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
               © 2024 SPAM —

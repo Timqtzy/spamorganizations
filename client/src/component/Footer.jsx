@@ -1,4 +1,4 @@
-import SpamLogo from "../../public/SpamLogo.png";
+import SpamLogo from "../assets/SpamLogo.png";
 import { Link } from "react-router-dom";
 
 function Footer() {

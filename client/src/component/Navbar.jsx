@@ -64,61 +64,61 @@ function Navbar() {
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li className="transition duration-300 ease-in delay-100">
               <NavLink
-                  to="/"
-                  className={
-                    isActive("/")
-                        ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
-                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  }
-                  aria-current={isActive("/") ? "page" : undefined}
+                to="/"
+                className={
+                  isActive("/")
+                    ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
+                    : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                }
+                aria-current={isActive("/") ? "page" : undefined}
               >
                 Home
               </NavLink>
             </li>
             <li className="transition duration-300 ease-in delay-100">
               <NavLink
-                  to="/about"
-                  className={
-                    isActive("/about")
-                        ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
-                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  }
+                to="/about"
+                className={
+                  isActive("/about")
+                    ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
+                    : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                }
               >
                 About
               </NavLink>
             </li>
             <li className="transition duration-300 ease-in delay-100">
               <NavLink
-                  to="/blog"
-                  className={
-                    isActive("/blog")
-                        ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
-                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  }
+                to="/blog"
+                className={
+                  isActive("/blog")
+                    ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
+                    : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                }
               >
                 Blog
               </NavLink>
             </li>
             <li className="transition duration-300 ease-in delay-100">
               <NavLink
-                  to="/register"
-                  className={
-                    isActive("/register")
-                        ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
-                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  }
+                to="/register"
+                className={
+                  isActive("/register")
+                    ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
+                    : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                }
               >
                 Registration
               </NavLink>
             </li>
             <li className="transition duration-300 ease-in delay-100">
               <NavLink
-                  to="/contact"
-                  className={
-                    isActive("/contact")
-                        ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
-                        : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  }
+                to="/contact"
+                className={
+                  isActive("/contact")
+                    ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
+                    : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                }
               >
                 Contact
               </NavLink>

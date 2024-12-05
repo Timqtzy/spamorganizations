@@ -289,10 +289,10 @@ function Home() {
       <div className="py-24 bg-gray-100">
         <div className="bg-gray-100 px-2 py-10">
           <div id="features" className="mx-auto max-w-6xl">
-            <p className="text-center text-base font-semibold leading-7 text-primary-500">
+            <p className="text-center text-base font-semibold leading-7 text-red-500">
               Why Choose Us?
             </p>
-            <h2 className="text-center font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
+            <h2 className="text-center font-display text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl">
               Empower your journalism with SPAM
             </h2>
             <ul className="mt-16 grid grid-cols-1 gap-6 text-center text-slate-700 md:grid-cols-3 ">
@@ -505,7 +505,7 @@ function Home() {
         </section>
       </div>
       <div className="mx-auto py-24 px-4 bg-gray-100">
-        <div className="max-w-screen-xl mx-auto">
+        <div className="max-w-screen-xl mx-auto py-12">
           <h1 className="sm:text-3xl md:text-3xl lg:text-4xl font-medium title-font mb-2 text-gray-900 text-center">
             Frequently Asked Questions
           </h1>

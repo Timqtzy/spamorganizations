@@ -82,9 +82,7 @@ function Footer() {
                 </button>
               </div>
               <p className="text-gray-500 text-sm mt-2 md:text-left text-center">
-                Subscribe for more
-                <br className="lg:block hidden" />
-                exciting news
+                Subscribe for more exciting news
               </p>
             </div>
           </div>

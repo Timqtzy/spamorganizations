@@ -11,10 +11,26 @@
       "config": { "distDir": "client/dist" }
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "source": "/about/*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/blog/*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/contact/*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/homepage/*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/register/*",
+      "destination": "/index.html"
     }
   ]
 }

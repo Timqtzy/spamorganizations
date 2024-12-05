@@ -11,26 +11,5 @@
       "config": { "distDir": "client/dist" }
     }
   ],
-  "rewrites": [
-    {
-      "src": "/about/*",
-      "dest": "/"
-    },
-    {
-      "src": "/blog/*",
-      "dest": "/"
-    },
-    {
-      "src": "/contact/*",
-      "dest": "/"
-    },
-    {
-      "src": "/homepage/*",
-      "dest": "/"
-    },
-    {
-      "src": "/register/*",
-      "dest": "/"
-    }
-  ]
+  "rewrites": [{ "src": "/(.*)", "dest": "/index.html" }]
 }

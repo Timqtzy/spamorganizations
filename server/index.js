@@ -163,7 +163,7 @@ const PORT = process.env.PORT || 5000;
 const corsOptions = {
   origin:
     process.env.NODE_ENV === "production"
-      ? "https://spamorganizations-client.vercel.app" // Replace with your production URL
+      ? "https://spamorganizations.vercel.app" // Replace with your production URL
       : [
           "http://localhost:5173",
           "http://localhost:3000",
@@ -279,10 +279,10 @@ app.get("/test", (req, res) => {
   res.json({ message: "Server is working" });
 });
 
-// Serve static files from the 'client/dist' directory
+// Serve static files from the 'dist' directory
 app.use(
-  "/assets",
-  express.static(path.join(__dirname, "client/dist/assets"), {
+  "/spam-react-apps/assets",
+  express.static(path.join(__dirname, "dist/assets"), {
     setHeaders: (res, filePath) => {
       if (filePath.endsWith(".css")) {
         res.setHeader("Content-Type", "text/css");
@@ -293,7 +293,7 @@ app.use(
 
 // All other GET requests not handled will return the React app
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/dist", "index.html"));
+  res.sendFile(path.join(__dirname, "index.js"));
 });
 
 // Start the server

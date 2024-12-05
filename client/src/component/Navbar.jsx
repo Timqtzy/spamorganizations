@@ -101,9 +101,9 @@ function Navbar() {
             </li>
             <li className="transition duration-300 ease-in delay-100">
               <NavLink
-                  to="/contact"
+                  to="/register"
                   className={
-                    isActive("/contact")
+                    isActive("/register")
                         ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
                         : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                   }

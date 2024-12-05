@@ -45,15 +45,13 @@ function Home() {
           </section>
         </div>
       </div> */}
-        <div className="py-24">
+        <div className="py-24 s:py-2 sm:py-4">
           <HeroSection/>
         </div>
-        {/*<div className="pt-12 pb-24 max-w-screen-xl mx-auto block s:hidden sm:hidden md:block lg:block">
+        <div className="pt-12 pb-24 max-w-screen-xl mx-auto block s:hidden sm:hidden md:block lg:block">
         {" "}
-        <CarouselLogo />
-      </div>
-      */}
-
+          <CarouselLogo />
+        </div>
         {/* <div className="pt-28 pb-24">
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto flex flex-wrap">
@@ -348,14 +346,14 @@ function Home() {
             </div>
           </section>
         </div>
-        <div className="py-24">
-          <section className="text-gray-600 body-font bg-customYellow max-w-screen-xl mx-auto sm:mx-4 rounded-lg">
-            <div className="container px-5 py-12 s:py-2 sm:py-2 mx-auto s:mx-0 sm:mx-0">
+        <div className="py-24 bg-white">
+          <section className="text-gray-600 body-font bg-customYellow max-w-screen-xl mx-auto rounded-lg">
+            <div className="containerpx-5 py-12 s:py-2 sm:py-2 mx-auto s:mx-0 sm:mx-0">
               <div className="flex flex-col text-center w-full mt-2 mb-2">
                 <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-gray-900">
                   Our Commitment to Integrity and Excellence in Journalism Starts Here
                 </h1>
-                <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center">
                   At our organization, we strive to uphold the highest standards in journalism. Our dedicated team works
                   tirelessly to promote transparency and accountability in media. Join us as we champion the values that
                   define quality journalism.

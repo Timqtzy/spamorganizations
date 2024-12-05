@@ -13,24 +13,24 @@
   ],
   "rewrites": [
     {
-      "source": "/about/*",
-      "destination": "/index.html"
+      "src": "/about/*",
+      "dest": "/"
     },
     {
-      "source": "/blog/*",
-      "destination": "/index.html"
+      "src": "/blog/*",
+      "dest": "/"
     },
     {
-      "source": "/contact/*",
-      "destination": "/index.html"
+      "src": "/contact/*",
+      "dest": "/"
     },
     {
-      "source": "/homepage/*",
-      "destination": "/index.html"
+      "src": "/homepage/*",
+      "dest": "/"
     },
     {
-      "source": "/register/*",
-      "destination": "/index.html"
+      "src": "/register/*",
+      "dest": "/"
     }
   ]
 }

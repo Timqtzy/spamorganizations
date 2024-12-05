@@ -1,4 +1,5 @@
-const flowbite = require("flowbite-react/tailwind");
+import flowbite from "flowbite-react/tailwind";
+import flowbitePlugin from "flowbite/plugin";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -39,7 +40,8 @@ export default {
     },
   },
   plugins: [
-    // ...
-    flowbite.plugin(),
+    flowbitePlugin({
+      datatables: true,
+    }),
   ],
 };

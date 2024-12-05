@@ -163,7 +163,7 @@ const PORT = process.env.PORT || 5000;
 const corsOptions = {
   origin:
     process.env.NODE_ENV === "production"
-      ? "https://spamorganizations-client.vercel.app" // Replace with your production URL
+      ? "https://spamorganizations-client-au3ajzlx3-timanh-nguyens-projects.vercel.app/" // Replace with your production URL
       : [
           "http://localhost:5173",
           "http://localhost:3000",

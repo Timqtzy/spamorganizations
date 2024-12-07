@@ -201,12 +201,12 @@ function Home() {
         <section className="text-gray-600 body-font">
           <div className="max-w-screen-xl container mx-auto flex px-4 py-12 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h4 className="font-semibold sm:text-2xl md:text-2xl lg:text-4xl mb-4 font-lg text-customRed">
+              <h4 className="title-font font-medium text-4xl s:text-2xl sm:text-2xl md:text-2xl smd:text-2xl lg:text-2xl xl:text-4xl mb-2 text-customRed">
                 Empowering Journalists to Uphold Truth and Foster Informed
                 Communities.
                 <span className="hidden lg:inline-block"> </span>
               </h4>
-              <p className="md:mb-2 mb-8 leading-relaxed text-base">
+              <p className="md:mb-4 mb-8 leading-relaxed text-base">
                 At our organization, we champion the principles of integrity and
                 excellence in journalism. Join us in our mission to promote
                 transparency and accountability in the media.
@@ -256,7 +256,7 @@ function Home() {
         <section className="text-gray-600 body-font">
           <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center max-w-screen-xl">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font sm:text-2xl md:2xl lg:text-4xl mb-2 font-medium text-gray-900">
+              <h1 className="title-font font-medium	text-4xl s:text-2xl sm:text-2xl md:text-2xl smd:text-2xl lg:text-2xl xl:text-4xl mb-2 text-gray-900">
                 Support Journalism with Your Donation
                 <br className="hidden lg:inline-block" />
               </h1>

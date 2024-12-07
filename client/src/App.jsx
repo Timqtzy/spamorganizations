@@ -7,8 +7,9 @@ import Register from "./pages/Register";
 import CmsEvent from "./component/CmsEvent";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
+import ScrollTop from "./component/ScrollTop";
+import "./App.css";
 
-// Enable future flags
 const futureConfig = {
   v7_startTransition: true,
   v7_relativeSplatPath: true,
@@ -17,6 +18,7 @@ const futureConfig = {
 function App() {
   return (
     <Router future={futureConfig}>
+      <ScrollTop />
       <div>
         <Navbar />
         <div className="content">

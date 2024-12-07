@@ -8,7 +8,6 @@ import HeroSection from "../component/HeroSection";
 import DataDisplay from "../component/DataDisplay";
 import AccordionComponent from "../component/AccordionComponent";
 import Subscribe from "../component/Subscribe";
-import ScrollButton from "../component/ScrollButton";
 import "../App.css";
 
 function Home() {

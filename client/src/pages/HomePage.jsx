@@ -201,7 +201,7 @@ function Home() {
         <section className="text-gray-600 body-font">
           <div className="max-w-screen-xl container mx-auto flex px-4 py-12 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h4 className="font-semibold sm:text-2xl md:text-2xl lg-text-4xl mb-4 font-lg text-customRed">
+              <h4 className="font-semibold sm:text-2xl md:text-2xl lg:text-4xl mb-4 font-lg text-customRed">
                 Empowering Journalists to Uphold Truth and Foster Informed
                 Communities.
                 <span className="hidden lg:inline-block"> </span>

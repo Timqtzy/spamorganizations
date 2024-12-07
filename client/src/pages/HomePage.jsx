@@ -179,15 +179,15 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="py-24 bg-customYellow">
+      <div className="py-24 s:py-12 md:py-24 bg-customYellow">
         <section className="text-gray-600 body-font max-w-screen-xl mx-auto rounded-lg">
           <div className="containerpx-5 py-12 s:py-2 sm:py-2 mx-auto s:mx-0 sm:mx-0">
             <div className="flex flex-col text-center w-full mt-2 mb-2">
-              <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-gray-900">
+              <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-gray-900 s:px-4">
                 Empowering Journalists to Uphold Integrity and Excellence in
                 Reporting
               </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center">
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center s:px-4">
                 At our organization, we are dedicated to promoting ethical
                 journalism that informs and empowers communities. Our mission is
                 to foster a culture of integrity, transparency, and excellence
@@ -199,14 +199,14 @@ function Home() {
       </div>
       <div className="py-24 bg-gray-100">
         <section className="text-gray-600 body-font">
-          <div className="max-w-screen-xl container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h4 className="font-semibold sm:text-4  xl text-3xl mb-4 font-lg text-customRed">
+          <div className="max-w-screen-xl container mx-auto flex px-4 py-12 md:flex-row flex-col items-center">
+            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+              <h4 className="font-semibold sm:text-2xl md:text-2xl lg-text-4xl mb-4 font-lg text-customRed">
                 Empowering Journalists to Uphold Truth and Foster Informed
                 Communities.
                 <span className="hidden lg:inline-block"> </span>
               </h4>
-              <p className="mb-8 leading-relaxed text-base">
+              <p className="md:mb-2 mb-8 leading-relaxed text-base">
                 At our organization, we champion the principles of integrity and
                 excellence in journalism. Join us in our mission to promote
                 transparency and accountability in the media.
@@ -222,15 +222,15 @@ function Home() {
           </div>
         </section>
       </div>
-      <div className="py-24 bg-customYellow">
+      <div className="py-24 s:py-12 md:py-24 bg-customYellow">
         <section className="text-gray-600 body-font max-w-screen-xl mx-auto rounded-lg">
           <div className="containerpx-5 py-12 s:py-2 sm:py-2 mx-auto s:mx-0 sm:mx-0">
             <div className="flex flex-col text-center w-full mt-2 mb-2">
-              <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-gray-900">
+              <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-gray-900 s:px-4">
                 Our Commitment to Integrity and Excellence in Journalism Starts
                 Here
               </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center">
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center s:px-4">
                 At our organization, we strive to uphold the highest standards
                 in journalism. Our dedicated team works tirelessly to promote
                 transparency and accountability in media. Join us as we champion
@@ -255,12 +255,12 @@ function Home() {
       <div className="py-24 px-4 bg-white">
         <section className="text-gray-600 body-font">
           <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center max-w-screen-xl">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+              <h1 className="title-font sm:text-2xl md:2xl lg:text-4xl mb-2 font-medium text-gray-900">
                 Support Journalism with Your Donation
                 <br className="hidden lg:inline-block" />
               </h1>
-              <p className="mb-8 leading-relaxed">
+              <p className="md:mb-4 mb-8 leading-relaxed">
                 Your contribution helps us promote integrity and excellence in
                 journalism for a better tomorrow.
               </p>
@@ -284,7 +284,7 @@ function Home() {
         {" "}
         <button
           onClick={() => window.scroll({ top: 0, behavior: "smooth" })}
-          className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-red-500 px-4 py-2 text-white hover:bg-customRedHover rounded text-lg transform transition-all duration-[300ms] ease-in delay-[100ms]"
         >
           {" "}
           <svg

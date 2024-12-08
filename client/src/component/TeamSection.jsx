@@ -1,10 +1,10 @@
 import React from "react";
-import member1 from "../src/TeamImage/member-1.png";
-import member2 from "../src/TeamImage/member-2.png";
-import member3 from "../src/TeamImage/member-3.png";
-import member4 from "../src/TeamImage/member-4.png";
-import member5 from "../src/TeamImage/member-5.png";
-import member6 from "../src/TeamImage/member-6.png";
+import member1 from "../TeamImage/member-1.png";
+import member2 from "../TeamImage/member-2.png";
+import member3 from "../TeamImage/member-3.png";
+import member4 from "../TeamImage/member-4.png";
+import member5 from "../TeamImage/member-5.png";
+import member6 from "../TeamImage/member-6.png";
 
 const teamMembers = [
   {

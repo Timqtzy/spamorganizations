@@ -41,10 +41,12 @@ const teamMembers = [
 
 const TeamSection = () => {
   return (
-    <section className="bg-white text-black py-16">
+    <section className="bg-white text-gray-600 py-16">
       <div className="max-w-screen-xl container mx-auto px-4">
         <div className="text-left mb-12">
-          <h2 className="text-4xl font-bold mb-4">Our people make us great</h2>
+          <h2 className="text-4xl text-black font-medium mb-4">
+            Our people make us great
+          </h2>
           <p className="text-lg mb-2">
             Here we focus on markets where technology and innovation can unlock
             long-term value.

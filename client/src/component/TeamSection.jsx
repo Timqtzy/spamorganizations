@@ -1,35 +1,36 @@
 import React from "react";
+import logo from "../assets/SpamLogo.png";
 
 const teamMembers = [
   {
     name: "Melanie V. Briones",
     role: "Chief Operating Officer Bot Chairperson",
-    image: "src/TeamImage/member-1.png",
+    image: "../src/TeamImage/member-1.png",
   },
   {
     name: "Richard N. Briones",
     role: "President",
-    image: "src/TeamImage/member-2.png",
+    image: "../src/TeamImage/member-2.png",
   },
   {
     name: "Jonathan V. Sta Ana",
     role: "Corporate Secretary",
-    image: "src/TeamImage/member-3.png",
+    image: "../src/TeamImage/member-3.png",
   },
   {
     name: "Alice R. Ramos",
     role: "Executive Secretary",
-    image: "src/TeamImage/member-4.png",
+    image: "../src/TeamImage/member-4.png",
   },
   {
     name: "Lydia S. Villanueva",
     role: "Vice-President Internal",
-    image: "src/TeamImage/member-5.png",
+    image: "../src/TeamImage/member-5.png",
   },
   {
     name: "June B. Mijares",
     role: "VP for Advocacy Affairs",
-    image: "src/TeamImage/member-6.png",
+    image: "../src/TeamImage/member-6.png",
   },
 ];
 

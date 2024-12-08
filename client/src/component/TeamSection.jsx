@@ -90,7 +90,7 @@ const TeamSection = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="m-6 p-4 w-full s:w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/5 bg-gray-100 rounded-md shadow-sm transition-all duration-300 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:-translate-y-1"
+              className="m-4 p-4 w-full s:w-10/12 sm:w-7/12 md:w-1/3 lg:w-1/5 bg-gray-100 rounded-md shadow-sm transition-all duration-300 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:-translate-y-1"
             >
               <div className="h-full flex flex-col items-center text-left">
                 <img

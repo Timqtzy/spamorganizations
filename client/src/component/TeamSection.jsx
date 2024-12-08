@@ -5,6 +5,7 @@ import member3 from "../TeamImage/member-3.png";
 import member4 from "../TeamImage/member-4.png";
 import member5 from "../TeamImage/member-5.png";
 import member6 from "../TeamImage/member-6.png";
+import { Link } from "react-router-dom";
 
 const teamMembers = [
   {
@@ -45,19 +46,22 @@ const TeamSection = () => {
       <div className="max-w-screen-xl container mx-auto px-4">
         <div className="text-left mb-12">
           <h2 className="text-4xl text-black font-medium mb-4">
-            Our people make us great
+            Meet Our Team
           </h2>
           <p className="text-lg mb-2">
-            Here we focus on markets where technology and innovation can unlock
-            long-term value.
+            Our diverse group of dedicated journalists brings a wealth of
+            experience and passion to uncovering the truth and delivering
+            impactful stories.
           </p>
           <p className="text-lg mb-6">
-            You'll interact with talented professionals, be challenged to solve
-            difficult problems, and think in new and creative ways.
+            Together, we strive to inform, inspire, and engage our readers with
+            reliable and compelling news.
           </p>
-          <button className="inline-flex text-white font-semibold bg-customRed border-0 py-2 px-6 focus:outline-none hover:bg-customRedHover rounded text-lg transform transition-all duration-[300ms] ease-in delay-[100ms]">
-            View more
-          </button>
+          <Link to="/about">
+            <button className="inline-flex text-white font-semibold bg-customRed border-0 py-2 px-6 focus:outline-none hover:bg-customRedHover rounded text-lg transform transition-all duration-[300ms] ease-in delay-[100ms]">
+              View more
+            </button>
+          </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {teamMembers.map((member, index) => (

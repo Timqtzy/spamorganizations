@@ -2,7 +2,7 @@ import { Accordion } from "flowbite-react";
 
 export default function AccordionComponent() {
   return (
-    <Accordion collapseAll className="bg-white">
+    <Accordion collapseAll className="bg-white mx-4">
       <Accordion.Panel>
         <Accordion.Title>What is SPAM?</Accordion.Title>
         <Accordion.Content>

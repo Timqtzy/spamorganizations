@@ -9,6 +9,7 @@ import DataDisplay from "../component/DataDisplay";
 import AccordionComponent from "../component/AccordionComponent";
 import Subscribe from "../component/Subscribe";
 import "../App.css";
+import TeamSection from "../component/TeamSection";
 
 function Home() {
   return (
@@ -22,7 +23,7 @@ function Home() {
       </div>
 
       <div className="py-24 bg-gray-100">
-        <div className="bg-gray-100 px-2 py-10">
+        <div className="bg-gray-100 px-4 py-10">
           <div id="features" className="mx-auto max-w-6xl">
             <p className="text-center text-base font-semibold leading-7 text-red-500">
               Why Choose Us?
@@ -239,7 +240,10 @@ function Home() {
           </div>
         </section>
       </div>
-      <div className="mx-auto py-24 px-4 bg-gray-100">
+      <div className="bg-white py-24">
+        <TeamSection />
+      </div>
+      <div className="mx-auto py-24 bg-gray-100">
         <div className="max-w-screen-xl mx-auto py-12">
           <h1 className="sm:text-3xl md:text-3xl lg:text-4xl font-medium title-font mb-2 text-gray-900 text-center">
             Frequently Asked Questions
@@ -251,8 +255,8 @@ function Home() {
           <AccordionComponent />
         </div>
       </div>
-      <div className="py-24 px-4 bg-white">
-        <section className="text-gray-600 body-font">
+      <div className="py-24 bg-white">
+        <section className="text-gray-600 body-font px-4">
           <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center max-w-screen-xl">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="title-font font-medium	text-4xl s:text-2xl sm:text-2xl md:text-2xl smd:text-2xl lg:text-2xl xl:text-4xl mb-2 text-gray-900">

@@ -283,7 +283,7 @@ function Home() {
           </div>
         </section>
       </div>
-      <div className="fixed bottom-4 right-4">
+      <div className="fixed bottom-4 right-4 z-10">
         {" "}
         <button
           onClick={() => window.scroll({ top: 0, behavior: "smooth" })}

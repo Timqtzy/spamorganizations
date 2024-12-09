@@ -5,7 +5,7 @@ import Event from "../component/Event";
 function Register() {
   return (
     <div>
-      <div className="flex items-center pt-28 pb-24 s:pt-12">
+      <div className="flex items-center pb-24 s:pt-12 md:pt-28 lg:pt-28 ">
         <EventRegistration />
       </div>
     </div>

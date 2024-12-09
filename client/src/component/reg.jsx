@@ -59,10 +59,10 @@ const EventRegistration = () => {
           </form>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-4 h-48 bg-none rounded-md">
+      <div className="flex justify-center items-center mt-8 h-64 bg-none rounded-md">
         {" "}
         <iframe
-          className="w-full h-auto border-0 rounded-md"
+          className="w-full h-64 border-0 rounded-md"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15412.183259971867!2d120.65233659776362!3d15.045581980252779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f76ad3222415%3A0xfdcd3074422f96ca!2sLausGroup%20Event%20Centre!5e0!3m2!1sen!2sph!4v1733739465888!5m2!1sen!2sph"
           allowFullScreen=""
           loading="lazy"

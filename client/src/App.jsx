@@ -8,7 +8,9 @@ import CmsEvent from "./component/CmsEvent";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import ScrollTop from "./component/ScrollTop";
+import NotFound from "./pages/NotFound";
 import "./App.css";
+import "@fontsource/poppins"; // Defaults to weight 400
 
 const futureConfig = {
   v7_startTransition: true,
@@ -29,6 +31,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/register" element={<Register />} />
             <Route path="/cmsevent" element={<CmsEvent />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <Footer />

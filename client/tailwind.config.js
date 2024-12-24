@@ -17,12 +17,13 @@ export default {
         },
       },
     },
+    fontFamily: { poppins: ["Poppins", "sans-serif"] },
     animation: {
       "fade-in-up": "fade-in-up 0.3s ease-out",
     },
     extend: {
       colors: {
-        customRed: "#9f2927",
+        customRed: "#ff2d2d",
         customRedHover: "#d62926",
         customYellow: "#f8f2db",
         customNavCol: "#fdeaea",

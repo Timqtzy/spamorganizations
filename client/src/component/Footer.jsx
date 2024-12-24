@@ -1,45 +1,102 @@
 import logo from "../assets/SpamLogo.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import axios from "axios";
 
 function Footer() {
+  const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
+  const [toastType, setToastType] = useState(""); // success, error
+
+  const showToastNotification = (message, type) => {
+    setToastMessage(message);
+    setToastType(type);
+    setShowToast(true);
+    // Auto-hide toast after 3 seconds
+    setTimeout(() => {
+      setShowToast(false);
+    }, 3000);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+      const response = await fetch(`${API_URL}/subscribe`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+      // Handle already subscribed email (409 conflict)
+      if (response.status === 409) {
+        showToastNotification("This email is already subscribed.", "error");
+        return; // Exit early, no need to proceed with the rest of the logic
+      }
+      if (response.ok) {
+        showToastNotification("Subscribed successfully!", "success");
+        setEmail("");
+      } else {
+        const errorMessage =
+          data.message || "Failed to subscribe. Please try again.";
+        showToastNotification(errorMessage, "error");
+      }
+    } catch (error) {
+      console.error("Subscription error:", error);
+      showToastNotification(
+        "Network error occurred. Please check your connection and try again.",
+        "error"
+      );
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
-    <div className="mx-auto bg-gray-100">
+    <div className="mx-auto bg-gray-800">
       <footer className="text-gray-600 body-font">
         <div className="container px-5 py-24 max-w-screen-xl mx-auto">
           <div className="flex flex-wrap md:text-left text-center order-first">
             <div className="lg:w-1/5 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
                 COMPANY
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Home</a>
+                  <a className="text-gray-300 hover:text-[#d62926]">Home</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">About</a>
+                  <a className="text-gray-300 hover:text-[#d62926]">About</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Blog</a>
+                  <a className="text-gray-300 hover:text-[#d62926]">Blog</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
+                  <a className="text-gray-300 hover:text-[#d62926]">
                     Registration
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Contact</a>
+                  <a className="text-gray-300 hover:text-[#d62926]">Contact</a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/5 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
                 SOCIAL MEDIA
               </h2>
               <nav className="list-none mb-10">
                 <li>
                   <a
                     href="https://www.facebook.com/SchoolPressAdvisersMovementInc"
-                    className="text-gray-600 hover:text-gray-800"
+                    className="text-gray-300 hover:text-[#d62926]"
                   >
                     Facebook
                   </a>
@@ -47,47 +104,59 @@ function Footer() {
               </nav>
             </div>
             <div className="lg:w-1/5 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
                 TERMS
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
+                  <a className="text-gray-300 hover:text-[#d62926]">
                     Privacy Policy
                   </a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-2/5 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
                 SUBSCRIBE
               </h2>
-              <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+              <form
+                onSubmit={handleSubmit}
+                className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start"
+              >
                 <div className="relative w-80 my-2 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
                   <label
                     htmlFor="footer-field"
-                    className="leading-7 text-sm text-gray-600"
+                    className="leading-7 text-sm text-gray-300"
                   >
                     Email
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     id="footer-field"
                     name="footer-field"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-[#ffacac] focus:border-customRed text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    required
+                    className="w-full bg-gray-100 bg-opacity-30 rounded border border-gray-300 focus:bg-white focus:border-[#FF6A6A] focus:ring-[#FF6A6A] focus:ring-1 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
-                <button className="my-2 lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-customRed border-0 py-2 px-6 focus:outline-none hover:bg-customRedHover rounded text-lg transform transition-all duration-[300ms] ease-in delay-[100ms]">
-                  Submit
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className={`my-2 lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-customRed border-0 py-2 px-6 focus:outline-none hover:bg-customRedHover rounded text-lg transform transition-all duration-[300ms] ease-in delay-[100ms]${
+                    isLoading ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
+                >
+                  {isLoading ? "Subscribing..." : "Subscribe"}
                 </button>
-              </div>
-              <p className="text-gray-500 text-sm mt-2 md:text-left text-center">
+              </form>
+              <p className="text-gray-300 text-sm mt-2 md:text-left text-center">
                 Subscribe for more exciting news
               </p>
             </div>
           </div>
         </div>
-        <div className="bg-gray-800">
+        <div className="bg-gray-800 border-t-2 border-gray-700 max-w-screen-xl mx-auto">
           <div className="container px-5 py-6 max-w-screen-xl mx-auto flex items-center sm:flex-row flex-col">
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
               {" "}
@@ -173,6 +242,19 @@ function Footer() {
           </div>
         </div>
       </footer>
+      {showToast && (
+        <div
+          className={`fixed bottom-4 right-4 z-50 min-w-[300px] text-center ${
+            toastType === "success"
+              ? "text-green-600 bg-green-100"
+              : "text-red-600 bg-red-100"
+          } p-4 rounded-lg shadow-lg border ${
+            toastType === "success" ? "border-green-200" : "border-red-200"
+          } animate-fade-in-up`}
+        >
+          {toastMessage}
+        </div>
+      )}
     </div>
   );
 }

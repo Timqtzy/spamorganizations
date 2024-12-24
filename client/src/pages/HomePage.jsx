@@ -13,7 +13,7 @@ import TeamSection from "../component/TeamSection";
 
 function Home() {
   return (
-    <div>
+    <div className="font-poppins">
       <div className="py-24 s:py-2 sm:py-4">
         <HeroSection />
       </div>
@@ -21,7 +21,24 @@ function Home() {
         {" "}
         <CarouselLogo />
       </div>
-
+      <div className="py-14 bg-gray-900 ">
+        <section className="text-gray-600 body-font max-w-screen-xl mx-auto rounded-lg">
+          <div className="containerpx-5 py-12 s:py-2 sm:py-2 mx-auto s:mx-0 sm:mx-0">
+            <div className="flex flex-col text-center w-full mt-2 mb-2">
+              <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-white s:px-4">
+                Empowering Journalists to Uphold Integrity and Excellence in
+                Reporting
+              </h1>
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center text-white s:px-4">
+                At our organization, we are dedicated to promoting ethical
+                journalism that informs and empowers communities. Our mission is
+                to foster a culture of integrity, transparency, and excellence
+                in media, ensuring that every voice is heard.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
       <div className="py-24 bg-gray-100">
         <div className="bg-gray-100 px-4 py-10">
           <div id="features" className="mx-auto max-w-6xl">
@@ -179,19 +196,23 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="py-24 s:py-12 md:py-24 bg-customYellow">
+
+      <div className="bg-white py-24">
+        <TeamSection />
+      </div>
+      <div className="py-14 bg-gray-900 ">
         <section className="text-gray-600 body-font max-w-screen-xl mx-auto rounded-lg">
           <div className="containerpx-5 py-12 s:py-2 sm:py-2 mx-auto s:mx-0 sm:mx-0">
             <div className="flex flex-col text-center w-full mt-2 mb-2">
-              <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-gray-900 s:px-4">
-                Empowering Journalists to Uphold Integrity and Excellence in
-                Reporting
+              <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-white s:px-4">
+                Our Commitment to Integrity and Excellence in Journalism Starts
+                Here
               </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center s:px-4">
-                At our organization, we are dedicated to promoting ethical
-                journalism that informs and empowers communities. Our mission is
-                to foster a culture of integrity, transparency, and excellence
-                in media, ensuring that every voice is heard.
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center text-white s:px-4">
+                At our organization, we strive to uphold the highest standards
+                in journalism. Our dedicated team works tirelessly to promote
+                transparency and accountability in media. Join us as we champion
+                the values that define quality journalism.
               </p>
             </div>
           </div>
@@ -201,7 +222,7 @@ function Home() {
         <section className="text-gray-600 body-font">
           <div className="max-w-screen-xl container mx-auto flex px-4 py-12 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h4 className="title-font font-medium text-4xl s:text-2xl sm:text-2xl md:text-2xl smd:text-2xl lg:text-2xl xl:text-4xl mb-2 text-customRed">
+              <h4 className="title-font font-medium text-4xl s:text-2xl sm:text-2xl md:text-2xl smd:text-2xl lg:text-2xl xl:text-4xl mb-2 text-gray-900">
                 Empowering Journalists to Uphold Truth and Foster Informed
                 Communities.
                 <span className="hidden lg:inline-block"> </span>
@@ -222,39 +243,7 @@ function Home() {
           </div>
         </section>
       </div>
-      <div className="py-24 s:py-12 md:py-24 bg-customYellow">
-        <section className="text-gray-600 body-font max-w-screen-xl mx-auto rounded-lg">
-          <div className="containerpx-5 py-12 s:py-2 sm:py-2 mx-auto s:mx-0 sm:mx-0">
-            <div className="flex flex-col text-center w-full mt-2 mb-2">
-              <h1 className="sm:text-4xl text-2xl font-medium title-font mb-4 text-gray-900 s:px-4">
-                Our Commitment to Integrity and Excellence in Journalism Starts
-                Here
-              </h1>
-              <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center s:px-4">
-                At our organization, we strive to uphold the highest standards
-                in journalism. Our dedicated team works tirelessly to promote
-                transparency and accountability in media. Join us as we champion
-                the values that define quality journalism.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div className="bg-white py-24">
-        <TeamSection />
-      </div>
-      <div className="mx-auto py-24 bg-gray-100">
-        <div className="max-w-screen-xl mx-auto py-12">
-          <h1 className="sm:text-3xl md:text-3xl lg:text-4xl font-medium title-font mb-2 text-gray-900 text-center">
-            Frequently Asked Questions
-          </h1>
-          <p className="text-gray-500 dark:text-gray-400 mb-4 sm:mb-4 md:mb-8 lg:mb-10 text-center">
-            {" "}
-            We're happy to answer your questions!
-          </p>
-          <AccordionComponent />
-        </div>
-      </div>
+
       <div className="py-24 bg-white">
         <section className="text-gray-600 body-font px-4">
           <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center max-w-screen-xl">
@@ -282,6 +271,18 @@ function Home() {
             </div>
           </div>
         </section>
+      </div>
+      <div className="mx-auto py-24 bg-gray-100">
+        <div className="max-w-screen-xl mx-auto py-12">
+          <h1 className="sm:text-3xl md:text-3xl lg:text-4xl font-medium title-font mb-2 text-gray-900 text-center">
+            Frequently Asked Questions
+          </h1>
+          <p className="text-gray-500 dark:text-gray-400 mb-4 sm:mb-4 md:mb-8 lg:mb-10 text-center">
+            {" "}
+            We're happy to answer your questions!
+          </p>
+          <AccordionComponent />
+        </div>
       </div>
       <div className="fixed bottom-4 right-4 z-10">
         {" "}

@@ -12,57 +12,41 @@ const teamMembers = [
     name: "Melanie V. Briones",
     role: "Chief Operating Officer Bot Chairperson",
     image: member1,
-    description:
-      "Jese drives the technical strategy of the themesberg platform and brand.",
   },
   {
     name: "Richard N. Briones",
     role: "President",
     image: member2,
-    description:
-      "Jese drives the technical strategy of the themesberg platform and brand.",
   },
   {
     name: "Jonathan V. Sta Ana",
     role: "Corporate Secretary",
     image: member3,
-    description:
-      "Jese drives the technical strategy of the themesberg platform and brand.",
   },
   {
     name: "Alice R. Ramos",
     role: "Executive Secretary",
     image: member4,
-    description:
-      "Jese drives the technical strategy of the themesberg platform and brand.",
   },
   {
     name: "Lydia S. Villanueva",
     role: "Vice-President Internal",
     image: member5,
-    description:
-      "Jese drives the technical strategy of the themesberg platform and brand.",
   },
   {
     name: "June B. Mijares",
     role: "VP for Advocacy Affairs",
     image: member6,
-    description:
-      "Jese drives the technical strategy of the themesberg platform and brand.",
   },
   {
     name: "Lydia S. Villanueva",
     role: "Vice-President Internal",
     image: member5,
-    description:
-      "Jese drives the technical strategy of the themesberg platform and brand.",
   },
   {
     name: "June B. Mijares",
     role: "VP for Advocacy Affairs",
     image: member6,
-    description:
-      "Jese drives the technical strategy of the themesberg platform and brand.",
   },
 ];
 

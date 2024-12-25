@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { useState } from "react";
 import Toast from "../component/Toast";
 
 function Contact() {
@@ -41,9 +40,9 @@ function Contact() {
   };
 
   return (
-    <div className="py-24 s:py-2 sm:py-4  font-poppins">
-      <section className="text-gray-600 body-font relative ">
-        <div className="container px-5 py-24 max-w-screen-xl mx-auto ">
+    <div className="py-24 s:py-2 sm:py-4 font-poppins">
+      <section className="text-gray-600 body-font relative">
+        <div className="container px-5 py-24 max-w-screen-xl mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
               Contact Us
@@ -56,8 +55,8 @@ function Contact() {
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
             <form onSubmit={sendEmail}>
-              <div className="flex flex-wrap -m-2">
-                <div className="p-2 w-1/2">
+              <div className="flex flex-col sm:flex-row flex-wrap -m-2">
+                <div className="p-2 w-full sm:w-1/2">
                   <div className="relative">
                     <label
                       htmlFor="name"
@@ -75,7 +74,7 @@ function Contact() {
                     />
                   </div>
                 </div>
-                <div className="p-2 w-1/2">
+                <div className="p-2 w-full sm:w-1/2">
                   <div className="relative">
                     <label
                       htmlFor="email"
@@ -113,7 +112,7 @@ function Contact() {
                 <div className="p-2 w-full">
                   <button
                     type="submit"
-                    className="flex mx-auto text-white bg-customRed border-0 py-2 px-8 focus:outline-none hover:bg-customRedHover rounded text-lg  transform transition-all duration-[300ms] ease-in delay-[100ms]"
+                    className="flex mx-auto text-white bg-customRed border-0 py-2 px-8 focus:outline-none hover:bg-customRedHover rounded text-lg transform transition-all duration-[300ms] ease-in delay-[100ms]"
                   >
                     Submit
                   </button>

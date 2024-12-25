@@ -1,88 +1,285 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const teamMembers = [
   {
-    name: "Emmy Rosum",
-    position: "Co-Founder and CEO",
+    name: "Melanie Viloria-Briones",
     image: "path/to/image1.jpg",
-    category: "Founder",
+    categories: [
+      { name: "Founder", positions: ["Founding President"] },
+      { name: "Board Of Trustees", positions: ["Chairperson"] },
+      {
+        name: "Executive Officers",
+        positions: ["Chief Operating Officer Bot Chairperson"],
+      },
+    ],
   },
   {
-    name: "Orlando Diggs",
-    position: "Co-Founder and COO",
+    name: "Lydia S. Villanueva",
     image: "path/to/image2.jpg",
-    category: "Founder",
+    categories: [
+      { name: "Founder", positions: ["Vice President"] },
+      { name: "Board Of Trustees", positions: ["Member"] },
+      { name: "Executive Officers", positions: ["Vice-President Internal"] },
+    ],
   },
   {
-    name: "Sophie Chamberlain",
-    position: "Head of Sales",
+    name: "Irene S. Linag",
     image: "path/to/image3.jpg",
-    category: "Executive Officers",
+    categories: [{ name: "Founder", positions: ["Secretary"] }],
   },
   {
-    name: "Lana Steiner",
-    position: "VP of Customer Success",
+    name: "Anatalia S. Sy",
     image: "path/to/image4.jpg",
-    category: "Executive Officers",
+    categories: [
+      { name: "Founder", positions: ["Treasurer"] },
+      { name: "Board Of Trustees", positions: ["Member"] },
+      { name: "Executive Officers", positions: ["Treasurer"] },
+    ],
   },
   {
-    name: "Emily Donnavan",
-    position: "Product Lead",
+    name: "Alexis Enriquez",
     image: "path/to/image5.jpg",
-    category: "Executive Officers",
+    categories: [{ name: "Founder", positions: ["PRO"] }],
   },
   {
-    name: "Sasha Kindred",
-    position: "VP of Marketing",
+    name: "Fatima S. Villones",
     image: "path/to/image6.jpg",
-    category: "Executive Officers",
+    categories: [{ name: "Founder", positions: ["Business Manager"] }],
   },
   {
-    name: "Jessica Dobrev",
-    position: "Backend Lead",
+    name: "Richard N. Briones",
     image: "path/to/image7.jpg",
-    category: "Executive Officers",
+    categories: [
+      { name: "Board Of Trustees", positions: ["Member"] },
+      { name: "Executive Officers", positions: ["President"] },
+    ],
   },
   {
-    name: "Drew Cano",
-    position: "Head of UX",
+    name: "Jonathan Sta. Ana",
     image: "path/to/image8.jpg",
-    category: "Executive Officers",
+    categories: [
+      { name: "Board Of Trustees", positions: ["Corporate Secretary"] },
+      { name: "Executive Officers", positions: ["Corporate Secretary"] },
+    ],
   },
   {
-    name: "John Doe",
-    position: "Developer",
+    name: "Jaypee V. Lagman",
     image: "path/to/image9.jpg",
-    category: "Executive Officers",
+    categories: [
+      { name: "Board Of Trustees", positions: ["Member"] },
+      { name: "Executive Officers", positions: ["Accountant"] },
+    ],
   },
   {
-    name: "Jane Smith",
-    position: "Designer",
+    name: "Mark Vincent V. Briones",
     image: "path/to/image10.jpg",
-    category: "Executive Officers",
+    categories: [
+      { name: "Board Of Trustees", positions: ["Member"] },
+      { name: "Executive Officers", positions: ["Secretariat-Deputy Chief"] },
+    ],
+  },
+  {
+    name: "Alice R. Ramos",
+    image: "path/to/image11.jpg",
+    categories: [
+      { name: "Executive Officers", positions: ["Executive Secretary"] },
+    ],
+  },
+  {
+    name: "Cristina B. Reyes",
+    image: "path/to/image12.jpg",
+    categories: [{ name: "Executive Officers", positions: ["VP for Luzon"] }],
+  },
+  {
+    name: "Richy Lloyd M. Tan",
+    image: "path/to/image13.jpg",
+    categories: [{ name: "Executive Officers", positions: ["VP for Visayas"] }],
+  },
+  {
+    name: "Carlito A. Robin",
+    image: "path/to/image14.jpg",
+    categories: [
+      { name: "Executive Officers", positions: ["VP for Mindanao"] },
+    ],
+  },
+  {
+    name: "June B. Mijares",
+    image: "path/to/image15.jpg",
+    categories: [
+      { name: "Executive Officers", positions: ["VP for Advocacy Affairs"] },
+    ],
+  },
+  {
+    name: "Jenny Rose Gatus Mariano",
+    image: "path/to/image15.jpg",
+    categories: [{ name: "Executive Officers", positions: ["Auditor"] }],
+  },
+  {
+    name: "Olga Domingo",
+    image: "path/to/image15.jpg",
+    categories: [
+      { name: "Executive Officers", positions: ["Representative of Luzon"] },
+    ],
+  },
+  {
+    name: "Loriedee D, Bentula",
+    image: "path/to/image15.jpg",
+    categories: [
+      { name: "Executive Officers", positions: ["Representative of Visayas"] },
+    ],
+  },
+  {
+    name: "Leah M. Panaguiton",
+    image: "path/to/image15.jpg",
+    categories: [
+      { name: "Executive Officers", positions: ["Representative of Mindanao"] },
+    ],
+  },
+  {
+    name: "Arvin B. Casimiro",
+    image: "path/to/image15.jpg",
+    categories: [
+      { name: "Executive Officers", positions: ["Events and Program Manager"] },
+    ],
+  },
+  {
+    name: "Cedric Joshua Jarcia",
+    image: "path/to/image15.jpg",
+    categories: [
+      { name: "Executive Officers", positions: ["Secretariat-Chief"] },
+    ],
+  },
+  {
+    name: "Rozel Enzo Hernandez",
+    image: "path/to/image15.jpg",
+    categories: [
+      {
+        name: "National Federation Of Campus Journalists",
+        positions: ["President"],
+      },
+    ],
+  },
+  {
+    name: "Win Sharm Cinco",
+    image: "path/to/image15.jpg",
+    categories: [
+      {
+        name: "National Federation Of Campus Journalists",
+        positions: ["Vice President"],
+      },
+    ],
+  },
+  {
+    name: "Kylie Mae Abegonia",
+    image: "path/to/image15.jpg",
+    categories: [
+      {
+        name: "National Federation Of Campus Journalists",
+        positions: ["Secretary"],
+      },
+    ],
+  },
+  {
+    name: "Aubrey Rose Rico",
+    image: "path/to/image15.jpg",
+    categories: [
+      {
+        name: "National Federation Of Campus Journalists",
+        positions: ["Luzon Representative"],
+      },
+    ],
+  },
+  {
+    name: "Gil Irinco",
+    image: "path/to/image15.jpg",
+    categories: [
+      {
+        name: "National Federation Of Campus Journalists",
+        positions: ["Visayas Representative"],
+      },
+    ],
+  },
+  {
+    name: "Safeeya Hamsirani",
+    image: "path/to/image15.jpg",
+    categories: [
+      {
+        name: "National Federation Of Campus Journalists",
+        positions: ["Mindanao Representative"],
+      },
+    ],
+  },
+  {
+    name: "Ronald Lacumbes JR.",
+    image: "path/to/image15.jpg",
+    categories: [
+      {
+        name: "National Federation Of Campus Journalists",
+        positions: ["Senior High School Representative"],
+      },
+    ],
   },
 ];
 
+const removeDuplicateNames = (members) => {
+  const seen = new Set();
+  return members.filter((member) => {
+    if (seen.has(member.name)) {
+      return false;
+    } else {
+      seen.add(member.name);
+      return true;
+    }
+  });
+};
+
 const TeamSection = () => {
-  const [displayedMembers, setDisplayedMembers] = useState(teamMembers);
+  const [displayedMembers, setDisplayedMembers] = useState(
+    removeDuplicateNames(teamMembers)
+  );
   const [currentCategory, setCurrentCategory] = useState("View all");
   const [currentPage, setCurrentPage] = useState(0);
-  const membersPerPage = 8;
+  const [membersPerPage, setMembersPerPage] = useState(8); 
+
+  useEffect(() => {
+    const updateMembersPerPage = () => {
+      if (window.innerWidth >= 1024) {
+        setMembersPerPage(8); 
+      } else if (window.innerWidth >= 768) {
+        setMembersPerPage(6); 
+      } else {
+        setMembersPerPage(4); 
+      }
+    };
+
+    updateMembersPerPage();
+
+    window.addEventListener("resize", updateMembersPerPage);
+
+    return () => {
+      window.removeEventListener("resize", updateMembersPerPage);
+    };
+  }, []);
 
   const filterMembers = (category) => {
     setCurrentCategory(category);
-    setCurrentPage(0); // Reset to the first page
+    setCurrentPage(0); 
     if (category === "View all") {
-      setDisplayedMembers(teamMembers);
+      setDisplayedMembers(removeDuplicateNames(teamMembers));
     } else {
       setDisplayedMembers(
-        teamMembers.filter((member) => member.category === category)
+        removeDuplicateNames(
+          teamMembers.filter((member) =>
+            member.categories.some((cat) => cat.name === category)
+          )
+        )
       );
     }
   };
 
   const renderButton = (category) => (
     <button
+      key={category}
       className={`m-1 px-3 py-2 text-sm rounded-md ${
         currentCategory === category ? "bg-red-500 text-white" : "bg-gray-200"
       }`}
@@ -138,31 +335,39 @@ const TeamSection = () => {
                   <h3 className="text-lg leading-6 font-medium text-gray-900">
                     {member.name}
                   </h3>
-                  <p className="text-red-600">{member.position}</p>
+                  {member.categories
+                    .filter((cat) =>
+                      currentCategory === "View all"
+                        ? true
+                        : cat.name === currentCategory
+                    )
+                    .map((cat, idx) => (
+                      <p key={idx} className="text-red-600">
+                        {cat.positions.join(", ")}
+                      </p>
+                    ))}
                 </div>
               </div>
             ))}
           </div>
-          {currentCategory === "View all" && (
-            <div className="flex justify-center mt-4">
-              <button
-                className="px-4 py-2 text-sm bg-gray-200 rounded-md mx-2"
-                onClick={handlePrevPage}
-                disabled={currentPage === 0}
-              >
-                Prev
-              </button>
-              <button
-                className="px-4 py-2 text-sm bg-gray-200 rounded-md mx-2"
-                onClick={handleNextPage}
-                disabled={
-                  (currentPage + 1) * membersPerPage >= displayedMembers.length
-                }
-              >
-                Next
-              </button>
-            </div>
-          )}
+          <div className="flex justify-center mt-4">
+            <button
+              className="px-4 py-2 text-sm bg-gray-200 rounded-md mx-2"
+              onClick={handlePrevPage}
+              disabled={currentPage === 0}
+            >
+              Prev
+            </button>
+            <button
+              className="px-4 py-2 text-sm bg-gray-200 rounded-md mx-2"
+              onClick={handleNextPage}
+              disabled={
+                (currentPage + 1) * membersPerPage >= displayedMembers.length
+              }
+            >
+              Next
+            </button>
+          </div>
         </div>
       </div>
     </section>

@@ -25,7 +25,7 @@ const CommunitySection = () => {
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
             Join a community of millions
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-400 lg:mx-auto">
+          <p className="mt-4 max-w-2xl text-xl text-gray-400 md:mx-auto lg:mx-auto">
             You're not alone. Two million journalists from all over the world
             connect through our platform every month. Journalism is something
             that people and teams can unite over.

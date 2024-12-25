@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const teamMembers = [
   {
     name: "Melanie Viloria-Briones",
-    image: "path/to/image1.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Founder", positions: ["Founding President"] },
       { name: "Board Of Trustees", positions: ["Chairperson"] },
@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     name: "Lydia S. Villanueva",
-    image: "path/to/image2.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Founder", positions: ["Vice President"] },
       { name: "Board Of Trustees", positions: ["Member"] },
@@ -24,12 +24,12 @@ const teamMembers = [
   },
   {
     name: "Irene S. Linag",
-    image: "path/to/image3.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [{ name: "Founder", positions: ["Secretary"] }],
   },
   {
     name: "Anatalia S. Sy",
-    image: "path/to/image4.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Founder", positions: ["Treasurer"] },
       { name: "Board Of Trustees", positions: ["Member"] },
@@ -38,17 +38,17 @@ const teamMembers = [
   },
   {
     name: "Alexis Enriquez",
-    image: "path/to/image5.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [{ name: "Founder", positions: ["PRO"] }],
   },
   {
     name: "Fatima S. Villones",
-    image: "path/to/image6.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [{ name: "Founder", positions: ["Business Manager"] }],
   },
   {
     name: "Richard N. Briones",
-    image: "path/to/image7.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Board Of Trustees", positions: ["Member"] },
       { name: "Executive Officers", positions: ["President"] },
@@ -56,7 +56,7 @@ const teamMembers = [
   },
   {
     name: "Jonathan Sta. Ana",
-    image: "path/to/image8.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Board Of Trustees", positions: ["Corporate Secretary"] },
       { name: "Executive Officers", positions: ["Corporate Secretary"] },
@@ -64,7 +64,7 @@ const teamMembers = [
   },
   {
     name: "Jaypee V. Lagman",
-    image: "path/to/image9.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Board Of Trustees", positions: ["Member"] },
       { name: "Executive Officers", positions: ["Accountant"] },
@@ -72,7 +72,7 @@ const teamMembers = [
   },
   {
     name: "Mark Vincent V. Briones",
-    image: "path/to/image10.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Board Of Trustees", positions: ["Member"] },
       { name: "Executive Officers", positions: ["Secretariat-Deputy Chief"] },
@@ -80,78 +80,78 @@ const teamMembers = [
   },
   {
     name: "Alice R. Ramos",
-    image: "path/to/image11.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Executive Secretary"] },
     ],
   },
   {
     name: "Cristina B. Reyes",
-    image: "path/to/image12.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [{ name: "Executive Officers", positions: ["VP for Luzon"] }],
   },
   {
     name: "Richy Lloyd M. Tan",
-    image: "path/to/image13.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [{ name: "Executive Officers", positions: ["VP for Visayas"] }],
   },
   {
     name: "Carlito A. Robin",
-    image: "path/to/image14.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["VP for Mindanao"] },
     ],
   },
   {
     name: "June B. Mijares",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["VP for Advocacy Affairs"] },
     ],
   },
   {
     name: "Jenny Rose Gatus Mariano",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [{ name: "Executive Officers", positions: ["Auditor"] }],
   },
   {
     name: "Olga Domingo",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Representative of Luzon"] },
     ],
   },
   {
     name: "Loriedee D, Bentula",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Representative of Visayas"] },
     ],
   },
   {
     name: "Leah M. Panaguiton",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Representative of Mindanao"] },
     ],
   },
   {
     name: "Arvin B. Casimiro",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Events and Program Manager"] },
     ],
   },
   {
     name: "Cedric Joshua Jarcia",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Secretariat-Chief"] },
     ],
   },
   {
     name: "Rozel Enzo Hernandez",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -161,7 +161,7 @@ const teamMembers = [
   },
   {
     name: "Win Sharm Cinco",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -171,7 +171,7 @@ const teamMembers = [
   },
   {
     name: "Kylie Mae Abegonia",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -181,7 +181,7 @@ const teamMembers = [
   },
   {
     name: "Aubrey Rose Rico",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -191,7 +191,7 @@ const teamMembers = [
   },
   {
     name: "Gil Irinco",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -201,7 +201,7 @@ const teamMembers = [
   },
   {
     name: "Safeeya Hamsirani",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -211,7 +211,7 @@ const teamMembers = [
   },
   {
     name: "Ronald Lacumbes JR.",
-    image: "path/to/image15.jpg",
+    image: "src/assets/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -239,16 +239,16 @@ const TeamSection = () => {
   );
   const [currentCategory, setCurrentCategory] = useState("View all");
   const [currentPage, setCurrentPage] = useState(0);
-  const [membersPerPage, setMembersPerPage] = useState(8); 
+  const [membersPerPage, setMembersPerPage] = useState(8);
 
   useEffect(() => {
     const updateMembersPerPage = () => {
       if (window.innerWidth >= 1024) {
-        setMembersPerPage(8); 
+        setMembersPerPage(8);
       } else if (window.innerWidth >= 768) {
-        setMembersPerPage(6); 
+        setMembersPerPage(6);
       } else {
-        setMembersPerPage(4); 
+        setMembersPerPage(4);
       }
     };
 
@@ -263,7 +263,7 @@ const TeamSection = () => {
 
   const filterMembers = (category) => {
     setCurrentCategory(category);
-    setCurrentPage(0); 
+    setCurrentPage(0);
     if (category === "View all") {
       setDisplayedMembers(removeDuplicateNames(teamMembers));
     } else {
@@ -281,7 +281,9 @@ const TeamSection = () => {
     <button
       key={category}
       className={`m-1 px-3 py-2 text-sm rounded-md ${
-        currentCategory === category ? "bg-red-500 text-white" : "bg-gray-200"
+        currentCategory === category
+          ? "bg-red-500 text-white"
+          : "bg-gray-200  hover:text-white hover:bg-customRedHover rounded text-lg transform transition-all duration-[300ms] ease-in delay-[100ms]"
       }`}
       onClick={() => filterMembers(category)}
     >
@@ -325,7 +327,10 @@ const TeamSection = () => {
         <div className="mt-10">
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {currentMembers.map((member) => (
-              <div key={member.name} className="text-center">
+              <div
+                key={member.name}
+                className="text-center p-4 rounded-md transition-all duration-300 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:-translate-y-1"
+              >
                 <img
                   className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
                   src={member.image}
@@ -335,31 +340,40 @@ const TeamSection = () => {
                   <h3 className="text-lg leading-6 font-medium text-gray-900">
                     {member.name}
                   </h3>
-                  {member.categories
-                    .filter((cat) =>
-                      currentCategory === "View all"
-                        ? true
-                        : cat.name === currentCategory
-                    )
-                    .map((cat, idx) => (
-                      <p key={idx} className="text-red-600">
-                        {cat.positions.join(", ")}
-                      </p>
-                    ))}
+                  {currentCategory !== "View all" &&
+                    member.categories
+                      .filter((cat) =>
+                        currentCategory === "View all"
+                          ? true
+                          : cat.name === currentCategory
+                      )
+                      .map((cat, idx) => (
+                        <p key={idx} className="text-red-600">
+                          {cat.positions.join(", ")}
+                        </p>
+                      ))}
                 </div>
               </div>
             ))}
           </div>
           <div className="flex justify-center mt-4">
             <button
-              className="px-4 py-2 text-sm bg-gray-200 rounded-md mx-2"
+              className={`px-4 py-2 text-sm font-medium rounded-sm mx-2 transform transition-all duration-[300ms] ease-in delay-[100ms] ${
+                currentPage === 0
+                  ? "bg-gray-400 text-gray-600 cursor-not-allowed"
+                  : "bg-gray-200 hover:text-white hover:bg-customRedHover"
+              }`}
               onClick={handlePrevPage}
               disabled={currentPage === 0}
             >
               Prev
             </button>
             <button
-              className="px-4 py-2 text-sm bg-gray-200 rounded-md mx-2"
+              className={`px-4 py-2 text-sm font-medium rounded-sm mx-2 transform transition-all duration-[300ms] ease-in delay-[100ms] ${
+                (currentPage + 1) * membersPerPage >= displayedMembers.length
+                  ? "bg-gray-400 text-gray-600 cursor-not-allowed"
+                  : "bg-customRed text-white hover:bg-customRedHover"
+              }`}
               onClick={handleNextPage}
               disabled={
                 (currentPage + 1) * membersPerPage >= displayedMembers.length

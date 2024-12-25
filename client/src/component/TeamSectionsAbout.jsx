@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import IMG from "../AboutTeamImg/Melanie Briones.png";
+import MelanieBrionesImg from "../AboutTeamImg/Melanie Briones.png";
 const teamMembers = [
   {
     name: "Melanie Viloria-Briones",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Founder", positions: ["Founding President"] },
       { name: "Board Of Trustees", positions: ["Chairperson"] },
@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     name: "Lydia S. Villanueva",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Founder", positions: ["Vice President"] },
       { name: "Board Of Trustees", positions: ["Member"] },
@@ -24,12 +24,13 @@ const teamMembers = [
   },
   {
     name: "Irene S. Linag",
-    image: "IMG",
+    image: MelanieBrionesImg,
+
     categories: [{ name: "Founder", positions: ["Secretary"] }],
   },
   {
     name: "Anatalia S. Sy",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Founder", positions: ["Treasurer"] },
       { name: "Board Of Trustees", positions: ["Member"] },
@@ -38,17 +39,17 @@ const teamMembers = [
   },
   {
     name: "Alexis Enriquez",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [{ name: "Founder", positions: ["PRO"] }],
   },
   {
     name: "Fatima S. Villones",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [{ name: "Founder", positions: ["Business Manager"] }],
   },
   {
     name: "Richard N. Briones",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Board Of Trustees", positions: ["Member"] },
       { name: "Executive Officers", positions: ["President"] },
@@ -56,7 +57,7 @@ const teamMembers = [
   },
   {
     name: "Jonathan Sta. Ana",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Board Of Trustees", positions: ["Corporate Secretary"] },
       { name: "Executive Officers", positions: ["Corporate Secretary"] },
@@ -64,7 +65,7 @@ const teamMembers = [
   },
   {
     name: "Jaypee V. Lagman",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Board Of Trustees", positions: ["Member"] },
       { name: "Executive Officers", positions: ["Accountant"] },
@@ -72,7 +73,7 @@ const teamMembers = [
   },
   {
     name: "Mark Vincent V. Briones",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Board Of Trustees", positions: ["Member"] },
       { name: "Executive Officers", positions: ["Secretariat-Deputy Chief"] },
@@ -80,78 +81,78 @@ const teamMembers = [
   },
   {
     name: "Alice R. Ramos",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Executive Officers", positions: ["Executive Secretary"] },
     ],
   },
   {
     name: "Cristina B. Reyes",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [{ name: "Executive Officers", positions: ["VP for Luzon"] }],
   },
   {
     name: "Richy Lloyd M. Tan",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [{ name: "Executive Officers", positions: ["VP for Visayas"] }],
   },
   {
     name: "Carlito A. Robin",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Executive Officers", positions: ["VP for Mindanao"] },
     ],
   },
   {
     name: "June B. Mijares",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Executive Officers", positions: ["VP for Advocacy Affairs"] },
     ],
   },
   {
     name: "Jenny Rose Gatus Mariano",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [{ name: "Executive Officers", positions: ["Auditor"] }],
   },
   {
     name: "Olga Domingo",
-    image: "src/AboutTeamImg/Melanie Briones.png",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Executive Officers", positions: ["Representative of Luzon"] },
     ],
   },
   {
     name: "Loriedee D, Bentula",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Executive Officers", positions: ["Representative of Visayas"] },
     ],
   },
   {
     name: "Leah M. Panaguiton",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Executive Officers", positions: ["Representative of Mindanao"] },
     ],
   },
   {
     name: "Arvin B. Casimiro",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Executive Officers", positions: ["Events and Program Manager"] },
     ],
   },
   {
     name: "Cedric Joshua Jarcia",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       { name: "Executive Officers", positions: ["Secretariat-Chief"] },
     ],
   },
   {
     name: "Rozel Enzo Hernandez",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -161,7 +162,7 @@ const teamMembers = [
   },
   {
     name: "Win Sharm Cinco",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -171,7 +172,7 @@ const teamMembers = [
   },
   {
     name: "Kylie Mae Abegonia",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -181,7 +182,7 @@ const teamMembers = [
   },
   {
     name: "Aubrey Rose Rico",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -191,7 +192,7 @@ const teamMembers = [
   },
   {
     name: "Gil Irinco",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -201,7 +202,7 @@ const teamMembers = [
   },
   {
     name: "Safeeya Hamsirani",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -211,7 +212,7 @@ const teamMembers = [
   },
   {
     name: "Ronald Lacumbes JR.",
-    image: "IMG",
+    image: MelanieBrionesImg,
     categories: [
       {
         name: "National Federation Of Campus Journalists",

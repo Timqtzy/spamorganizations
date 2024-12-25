@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-
 const teamMembers = [
   {
     name: "Melanie Viloria-Briones",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Founder", positions: ["Founding President"] },
       { name: "Board Of Trustees", positions: ["Chairperson"] },
@@ -15,7 +14,7 @@ const teamMembers = [
   },
   {
     name: "Lydia S. Villanueva",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Founder", positions: ["Vice President"] },
       { name: "Board Of Trustees", positions: ["Member"] },
@@ -24,12 +23,12 @@ const teamMembers = [
   },
   {
     name: "Irene S. Linag",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [{ name: "Founder", positions: ["Secretary"] }],
   },
   {
     name: "Anatalia S. Sy",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Founder", positions: ["Treasurer"] },
       { name: "Board Of Trustees", positions: ["Member"] },
@@ -38,17 +37,17 @@ const teamMembers = [
   },
   {
     name: "Alexis Enriquez",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [{ name: "Founder", positions: ["PRO"] }],
   },
   {
     name: "Fatima S. Villones",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [{ name: "Founder", positions: ["Business Manager"] }],
   },
   {
     name: "Richard N. Briones",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Board Of Trustees", positions: ["Member"] },
       { name: "Executive Officers", positions: ["President"] },
@@ -56,7 +55,7 @@ const teamMembers = [
   },
   {
     name: "Jonathan Sta. Ana",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Board Of Trustees", positions: ["Corporate Secretary"] },
       { name: "Executive Officers", positions: ["Corporate Secretary"] },
@@ -64,7 +63,7 @@ const teamMembers = [
   },
   {
     name: "Jaypee V. Lagman",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Board Of Trustees", positions: ["Member"] },
       { name: "Executive Officers", positions: ["Accountant"] },
@@ -72,7 +71,7 @@ const teamMembers = [
   },
   {
     name: "Mark Vincent V. Briones",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Board Of Trustees", positions: ["Member"] },
       { name: "Executive Officers", positions: ["Secretariat-Deputy Chief"] },
@@ -80,78 +79,78 @@ const teamMembers = [
   },
   {
     name: "Alice R. Ramos",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Executive Secretary"] },
     ],
   },
   {
     name: "Cristina B. Reyes",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [{ name: "Executive Officers", positions: ["VP for Luzon"] }],
   },
   {
     name: "Richy Lloyd M. Tan",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [{ name: "Executive Officers", positions: ["VP for Visayas"] }],
   },
   {
     name: "Carlito A. Robin",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["VP for Mindanao"] },
     ],
   },
   {
     name: "June B. Mijares",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["VP for Advocacy Affairs"] },
     ],
   },
   {
     name: "Jenny Rose Gatus Mariano",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [{ name: "Executive Officers", positions: ["Auditor"] }],
   },
   {
     name: "Olga Domingo",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Representative of Luzon"] },
     ],
   },
   {
     name: "Loriedee D, Bentula",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Representative of Visayas"] },
     ],
   },
   {
     name: "Leah M. Panaguiton",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Representative of Mindanao"] },
     ],
   },
   {
     name: "Arvin B. Casimiro",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Events and Program Manager"] },
     ],
   },
   {
     name: "Cedric Joshua Jarcia",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       { name: "Executive Officers", positions: ["Secretariat-Chief"] },
     ],
   },
   {
     name: "Rozel Enzo Hernandez",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -161,7 +160,7 @@ const teamMembers = [
   },
   {
     name: "Win Sharm Cinco",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -171,7 +170,7 @@ const teamMembers = [
   },
   {
     name: "Kylie Mae Abegonia",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -181,7 +180,7 @@ const teamMembers = [
   },
   {
     name: "Aubrey Rose Rico",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -191,7 +190,7 @@ const teamMembers = [
   },
   {
     name: "Gil Irinco",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -201,7 +200,7 @@ const teamMembers = [
   },
   {
     name: "Safeeya Hamsirani",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",
@@ -211,7 +210,7 @@ const teamMembers = [
   },
   {
     name: "Ronald Lacumbes JR.",
-    image: "src/assets/Melanie Briones.png",
+    image: "src/AboutTeamImg/Melanie Briones.png",
     categories: [
       {
         name: "National Federation Of Campus Journalists",

@@ -70,29 +70,29 @@ const TeamSection = () => {
             </button>
           </Link>
         </div>
-        <div className="flex flex-wrap justify-center">
-          {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="m-4 p-4 w-full s:w-10/12 sm:w-7/12 md:w-1/3 lg:w-1/5 bg-gray-100 rounded-md shadow-sm transition-all duration-300 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:-translate-y-1"
-            >
-              <div className="h-full flex flex-col items-center text-left">
+        <div className="mt-10">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {teamMembers.map((member, index) => (
+              <div
+                key={index}
+                className="text-center p-4 rounded-md transition-all duration-300 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:-translate-y-1"
+              >
                 <img
                   alt={member.name}
-                  className="flex-shrink-0 rounded-lg w-full h-48 object-cover object-center mb-4"
+                  className="mx-auto h-40 w-40 rounded-lg xl:w-56 xl:h-56"
                   src={member.image}
                 />
-                <div className="w-full">
-                  <h2 className="title-font font-semibold text-lg text-gray-900 text-center">
+                <div className="mt-6">
+                  <h2 className="title-font font-semibold text-lg text-gray-900">
                     {member.name}
                   </h2>
-                  <h3 className="text-gray-800 mb-3 font-medium text-center">
+                  <h3 className="text-gray-800 mb-3 font-medium">
                     {member.role}
                   </h3>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

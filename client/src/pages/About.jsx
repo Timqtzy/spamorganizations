@@ -17,7 +17,7 @@ function About() {
         <h2 className="text-red-700 text-3xl font-extrabold mb-8 text-center">
           Brief History
         </h2>
-        <p className="text-justify mb-4 text-lg">
+        <p className="text-left mb-4 text-lg">
           The School Press Advisers Movement Inc. (SPAM, INC.) was conceived by
           its founding president, Dr. Melanie Viloria-Briones and was pitched by
           her to campus paper advisers on September 10, 2006 in a national
@@ -29,7 +29,7 @@ function About() {
           deserving institutions that need assistance in the establishment of
           their publications or training of their writers.
         </p>
-        <p className="text-justify text-lg">
+        <p className="text-left text-lg">
           On July 29, 2009, the organization was registered at the Securities
           and Exchange Commission (SEC) with Company Registration No.
           CN200911591. Embracing the principle of co-opetition', SPAM Inc.

@@ -197,7 +197,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="bg-white py-24">
+      <div className="bg-white">
         <TeamSection />
       </div>
       <div className="py-14 bg-gray-900 ">

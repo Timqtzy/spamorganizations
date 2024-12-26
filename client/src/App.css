@@ -1,3 +1,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+.hidden-no-space {
+  display: none;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}

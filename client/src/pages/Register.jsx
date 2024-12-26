@@ -1,7 +1,7 @@
 import React from "react";
 import EventRegistration from "../component/reg";
 import Event from "../component/Event";
-
+import "../App.css";
 function Register() {
   return (
     <div className="font-poppins">

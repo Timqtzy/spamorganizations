@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Toast from "../component/Toast";
+import "../App.css";
 
 function Contact() {
   const [showToast, setShowToast] = useState(false);

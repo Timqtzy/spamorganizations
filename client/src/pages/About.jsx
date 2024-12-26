@@ -12,9 +12,9 @@ function About() {
         <img
           src={logo}
           alt="St. Nicolas College Logo"
-          className="mb-4 w-32 h-auto mx-auto"
+          className="mb-4 w-32 h-auto mx-auto md:flex s:hidden"
         />
-        <h2 className="text-red-700 text-3xl font-extrabold mb-8 text-center">
+        <h2 className="text-red-700 text-3xl font-extrabold mb-8  text-center s:text-left">
           Brief History
         </h2>
         <p className="text-left mb-4 text-lg">
@@ -35,6 +35,27 @@ function About() {
           CN200911591. Embracing the principle of co-opetition', SPAM Inc.
           expanded its composition to include school administrators, media and
           industry practitioners.
+        </p>
+      </div>
+      <div className="py-24 px-4 lg:flex lg:flex-col lg:items-center max-w-7xl mx-auto">
+        <h2 className="text-red-700 text-3xl font-extrabold mb-8 text-center s:text-left">
+          Why 'Movement'{" "}
+        </h2>
+        <p className="text-left mb-4 text-lg">
+          SPAM Inc. endeavors to effect reforms; it is not only confined in
+          gathering participants to be merely audience or listeners. It does not
+          only open doors for School Paper Advisers (SPAs) to hone their skills
+          but it also gives them the opportunity to propose modules, share their
+          expertise and develop their skills in research. Hand-in-hand with this
+          journey of self-enrichment is the training provided to student
+          journalists and communication and journalism students from various
+          parts of the country.
+        </p>
+        <p className="text-left text-lg">
+          The trainings and contests that the organization has embarked on paved
+          the way for the development of the students' ability to realize the
+          concepts of co-opetition'. All these are ways for the realization of
+          the organization's advocacy in promoting responsible journalism.
         </p>
       </div>
       <div>

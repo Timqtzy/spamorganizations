@@ -333,7 +333,7 @@ const TeamSection = () => {
                 className="text-center p-4 rounded-md transition-all duration-300 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:-translate-y-1"
               >
                 <img
-                  className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
+                  className="mx-auto h-40 w-40 rounded-lg xl:w-56 xl:h-56"
                   src={member.image}
                   alt={member.name}
                 />

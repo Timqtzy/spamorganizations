@@ -54,7 +54,7 @@ const EventRegistration = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-customRed text-white py-2 rounded-md hover:bg-customRedHover rounded text-lg transform transition-all duration-[300ms] ease-in delay-[100ms]"
+              className="w-full bg-customRed text-white py-2 rounded-md hover:bg-customRedHover text-lg transform transition-all duration-[300ms] ease-in delay-[100ms]"
             >
               Register
             </button>

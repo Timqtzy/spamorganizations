@@ -71,15 +71,15 @@ const TeamSection = () => {
           </Link>
         </div>
         <div className="mt-10">
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="text-center p-4 rounded-md transition-all duration-300 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:-translate-y-1"
+                className="text-center py-4 rounded-md transition-all duration-300 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:-translate-y-1"
               >
                 <img
                   alt={member.name}
-                  className="mx-auto h-40 w-40 rounded-lg xl:w-56 xl:h-56"
+                  className="mx-auto h-64 w-64 rounded-md xl:w-56 xl:h-56"
                   src={member.image}
                 />
                 <div className="mt-6">

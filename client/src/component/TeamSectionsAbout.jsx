@@ -326,14 +326,14 @@ const TeamSection = () => {
           </div>
         </div>
         <div className="mt-10">
-          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
             {currentMembers.map((member) => (
               <div
                 key={member.name}
-                className="text-center p-4 rounded-md transition-all duration-300 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:-translate-y-1"
+                className="text-center py-4 rounded-md transition-all duration-300 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)] hover:-translate-y-1"
               >
                 <img
-                  className="mx-auto h-40 w-40 rounded-lg xl:w-56 xl:h-56"
+                  className="mx-auto h-64 w-64 rounded-lg xl:w-56 xl:h-56"
                   src={member.image}
                   alt={member.name}
                 />
@@ -357,7 +357,7 @@ const TeamSection = () => {
               </div>
             ))}
           </div>
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-8">
             <button
               className={`px-4 py-2 text-sm font-medium rounded-sm mx-2 transform transition-all duration-[300ms] ease-in delay-[100ms] ${
                 currentPage === 0

@@ -2,6 +2,7 @@ import React from "react";
 import CommunitySection from "../component/CommunitySection";
 import TeamSection from "../component/TeamSectionsAbout";
 import logo from "../assets/SpamLogo.png";
+import Founder from "../AboutTeamImg/Melanie Briones.png";
 import "../App.css";
 
 function About() {
@@ -61,14 +62,63 @@ function About() {
         </p>
       </div>
       */}
+      {/*
+      <div>
+        <section className="text-gray-600 body-font">
+          <div className="max-w-7xl mx-auto flex px-4  py-24 flex-col items-center">
+            <div className="max-w-lg lg:w-1/2 w-full mb-10 md:mb-8">
+              <img
+                className="mx-auto object-cover object-center w-96 h-96 rounded transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(220,38,38,0.3)]"
+                alt="hero"
+                src={Founder}
+              />
+            </div>
+            
+            <div className="lg:flex-grow w-full flex flex-col items-start text-left items-left ">
+              <h3 className="text-sm font-medium text-red-700 uppercase">
+                Founding President{" "}
+              </h3>
+              <h2 className="text-3xl font-extrabold text-gray-900 mt-2">
+                Melanie Viloria-Briones{" "}
+              </h2>
+              <p className="text-lg mb-8 leading-relaxed">
+                Melanie G. Viloria-Briones is a passionate advocate for media
+                education and responsible campus journalism, whose dedication
+                stems from her firsthand experiences as a campus journalist and
+                publication moderator. Recognizing the growing need to empower
+                campus journalists and support school paper advisers, she
+                founded the School Press Advisers Movement, Incorporated—a
+                pioneering initiative aimed at transforming journalism education
+                and mentorship in the Philippines. Briones stands as a beacon of
+                excellence, combining her expertise with a relentless drive to
+                inspire responsible reporting and ethical storytelling across
+                the country. Under her leadership, the organization has become a
+                trailblazer in fostering professional growth and guiding campus
+                journalism towards global standards. With the vision of creating
+                a nationally and internationally respected movement, the
+                organization focuses on advancing four critical pillars: Media
+                Technologies, Journalistic Writing, Integrated Marketing
+                Communications and Media Ethics. Through this comprehensive
+                approach, Briones has built a platform that equips future media
+                leaders to navigate an increasingly complex world. Her mission
+                centers on nurturing 21st-century communicators who not only
+                excel in their craft but also contribute meaningfully to society
+                and the environment. Melanie Viloria-Briones continues to
+                inspire a generation of journalists and educators to uphold the
+                principles of integrity, innovation, and impactful storytelling.
+                Her work ensures that campus journalism remains a force for
+                good, shaping the voices of tomorrow.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      */}
       <div>
         <section className="py-12 bg-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row">
               <div className="flex-1 lg:w-1/3 mb-6 lg:mb-0">
-                <h3 className="text-sm font-medium text-gray-500 uppercase">
-                  VISION
-                </h3>
                 <h2 className="text-3xl font-extrabold text-gray-900 mt-2">
                   Our Vision
                 </h2>
@@ -88,9 +138,6 @@ function About() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row">
               <div className="flex-1 lg:w-1/3 mb-6 lg:mb-0">
-                <h3 className="text-sm font-medium text-gray-500 uppercase">
-                  MISSION
-                </h3>
                 <h2 className="text-3xl font-extrabold text-gray-900 mt-2">
                   Our Mission
                 </h2>
@@ -112,9 +159,6 @@ function About() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row">
               <div className="flex-1 lg:w-1/3 mb-6 lg:mb-0">
-                <h3 className="text-sm font-medium text-gray-500 uppercase">
-                  History
-                </h3>
                 <h2 className="text-3xl font-extrabold text-gray-900 mt-2">
                   Brief History
                 </h2>
@@ -148,9 +192,6 @@ function About() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row">
               <div className="flex-1 lg:w-1/3 mb-6 lg:mb-0">
-                <h3 className="text-sm font-medium text-gray-500 uppercase">
-                  Why?
-                </h3>
                 <h2 className="text-3xl font-extrabold text-gray-900 mt-2">
                   Why Movement?
                 </h2>
@@ -171,6 +212,52 @@ function About() {
                   of co-opetition'. All these are ways for the realization of
                   the organization's advocacy in promoting responsible
                   journalism.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-12 bg-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col lg:flex-row">
+              <div className="flex-1 lg:w-1/3 mb-6 lg:mb-0">
+                <h2 className="text-3xl font-extrabold text-gray-900 mt-2">
+                  Founding President
+                </h2>
+              </div>
+              <div className="flex-1 lg:w-2/3">
+                <p className="text-lg text-gray-500">
+                  <span className="text-red-600">
+                    Melanie G. Viloria-Briones{" "}
+                  </span>
+                  is a passionate advocate for media education and responsible
+                  campus journalism, whose dedication stems from her firsthand
+                  experiences as a campus journalist and publication moderator.
+                  Recognizing the growing need to empower campus journalists and
+                  support school paper advisers, she founded the School Press
+                  Advisers Movement, Incorporated—a pioneering initiative aimed
+                  at transforming journalism education and mentorship in the
+                  Philippines. <br /> <br /> Briones stands as a beacon of
+                  excellence, combining her expertise with a relentless drive to
+                  inspire responsible reporting and ethical storytelling across
+                  the country. Under her leadership, the organization has become
+                  a trailblazer in fostering professional growth and guiding
+                  campus journalism towards global standards. With the vision of
+                  creating a nationally and internationally respected movement,
+                  the organization focuses on advancing four critical pillars:
+                  Media Technologies, Journalistic Writing, Integrated Marketing
+                  Communications and Media Ethics. Through this comprehensive
+                  approach, Briones has built a platform that equips future
+                  media leaders to navigate an increasingly complex world. Her
+                  mission centers on nurturing 21st-century communicators who
+                  not only excel in their craft but also contribute meaningfully
+                  to society and the environment.
+                  <br />
+                  <br /> Melanie Viloria-Briones continues to inspire a
+                  generation of journalists and educators to uphold the
+                  principles of integrity, innovation, and impactful
+                  storytelling. Her work ensures that campus journalism remains
+                  a force for good, shaping the voices of tomorrow.
                 </p>
               </div>
             </div>

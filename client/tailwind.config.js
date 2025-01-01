@@ -32,10 +32,12 @@ export default {
       },
       screens: {
         s: "0px",
+        ssm: "448px",
         sm: "640px",
         md: "768px",
         smd: "944px",
         lg: "1024px",
+        slg: "1260px",
         xl: "1280px",
       },
     },

@@ -273,7 +273,12 @@ function About() {
       </div>
 
       <div className="bg-gray-100">
-        <div className="bg-gray-100 pt-24 pb-4 slg:pb-0 px-4 flex flex-col lg:flex-col slg:flex-row lg:items-left slg:items-center max-w-7xl mx-auto">
+        <div className="mx-auto max-w-7xl text-center pt-24 pb-4">
+          <h2 className="text-3xl font-extrabold text-gray-900">
+            Founding President
+          </h2>
+        </div>
+        <div className="bg-gray-100 pt-8 pb-4 slg:pb-0 px-4 flex flex-col lg:flex-col slg:flex-row lg:items-left slg:items-center max-w-7xl mx-auto">
           <div className="lg:w-1/2 mr-8 s:mx-auto sm:mx-auto md:mx-auto smd:mx-auto lg:mx-auto slg:mx-0">
             <img
               src={Founder}

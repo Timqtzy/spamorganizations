@@ -182,7 +182,7 @@ const YourComponent = () => {
 
   return (
     <div
-      className="mx-auto max-w-7xl text-center px-6 pt-24"
+      className="mx-auto max-w-7xl text-center px-4 pt-24"
       ref={eventContainerRef}
     >
       <section
@@ -190,8 +190,8 @@ const YourComponent = () => {
         className={`${sectionInView ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="bg-white text-white">
-          <div className="container mx-auto flex flex-col lg:flex-row slg:flex-row items-start">
-            <div className="flex flex-col w-full lg:sticky md:top-36 lg:w-1/3 mt-2 md:my-12 px-8">
+          <div className="container mx-auto s:mx-0 ssm:mx-0 flex flex-col  lg:flex-row slg:flex-row items-start">
+            <div className="flex flex-col w-full lg:sticky md:top-36 lg:w-1/3 mt-2 md:my-12 py-8 md:px-8 s:px-0 sm:px-0 ssm:px-0">
               <p className="ml-2 text-red-400 uppercase tracking-loose">
                 Events{" "}
               </p>
@@ -211,13 +211,13 @@ const YourComponent = () => {
             </div>
             <div className=" lg:w-2/3 sticky">
               <div className="container mx-auto w-full h-full">
-                <div className="relative wrap overflow-hidden p-10 h-full">
+                <div className="relative wrap overflow-hidden p-10 s:p-0  sm:pb-4  h-full">
                   <div
-                    className="border-2 border-customRed absolute h-full border border-red-400 rounded"
+                    className="border-2  absolute h-full  border-red-400 rounded"
                     style={{ right: "50%" }}
                   ></div>
                   <div
-                    className="border-2 border-customRed absolute h-full border border-red-400 rounded"
+                    className="border-2  absolute h-full border-red-400 rounded"
                     style={{ left: "50%" }}
                   ></div>
                   {displayedEvents.map((event, index) => (
@@ -264,7 +264,7 @@ const YourComponent = () => {
                   </button>
                 </div>
                 <img
-                  className="mx-auto -mt-36 md:-mt-36"
+                  className="mx-auto mt-36 md:-mt-36 hidden sm:block"
                   src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png"
                   alt="Your Alt Text"
                 />

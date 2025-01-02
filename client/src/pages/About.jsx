@@ -332,7 +332,7 @@ function About() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl text-center px-6 pt-24">
+      <div className="">
         <TimeLine />
       </div>
       <div className="" id="end">

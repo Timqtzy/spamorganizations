@@ -190,7 +190,7 @@ const YourComponent = () => {
         className={`${sectionInView ? "animate-fade-in" : "opacity-0"}`}
       >
         <div className="bg-white text-white">
-          <div className="container mx-auto s:mx-0 ssm:mx-0 flex flex-col  lg:flex-row slg:flex-row items-start">
+          <div className="mx-auto  flex flex-col  lg:flex-row slg:flex-row items-start">
             <div className="flex flex-col w-full lg:sticky md:top-36 lg:w-1/3 mt-2 md:my-12 py-8 md:px-8 s:px-0 sm:px-0 ssm:px-0">
               <p className="ml-2 text-red-400 uppercase tracking-loose">
                 Events{" "}
@@ -210,7 +210,7 @@ const YourComponent = () => {
               </a>
             </div>
             <div className=" lg:w-2/3 sticky">
-              <div className="container mx-auto w-full h-full">
+              <div className=" mx-auto w-full h-full">
                 <div className="relative wrap overflow-hidden p-10 s:p-0  sm:pb-4  h-full">
                   <div
                     className="border-2  absolute h-full  border-red-400 rounded"

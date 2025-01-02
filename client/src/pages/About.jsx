@@ -4,6 +4,7 @@ import TeamSection from "../component/TeamSectionsAbout";
 import logo from "../assets/SpamLogo.png";
 import Founder from "../AboutTeamImg/Melanie Briones.png";
 import "../App.css";
+import TimeLine from "../component/TimeLine";
 
 function About() {
   return (
@@ -273,7 +274,7 @@ function About() {
       </div>
 
       <div className="bg-gray-100">
-        <div className="mx-auto max-w-7xl text-center pt-24 pb-4">
+        <div className="mx-auto max-w-7xl text-center px-6 pt-24">
           <h2 className="text-3xl font-extrabold text-gray-900">
             Founding President
           </h2>
@@ -329,6 +330,13 @@ function About() {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="mx-auto max-w-7xl text-center px-6 pt-24">
+        <TimeLine />
+      </div>
+      <div className="" id="end">
+        <h2>Henlo</h2>
       </div>
       <div className="fixed bottom-4 right-4 z-10">
         {" "}

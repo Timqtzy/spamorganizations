@@ -195,8 +195,7 @@ const TimeLine = () => {
               </p>{" "}
               <p className="text-sm text-gray-500 mb-4">
                 {" "}
-                This is your reference for the events and programs. Follow all
-                the steps to understand the timeline.{" "}
+                Learn about the events and programs that shaped our journey.{" "}
               </p>{" "}
               {/*<a
                 href="#end"
@@ -260,7 +259,7 @@ const TimeLine = () => {
                 </button>{" "}
               </div>{" "}
               <img
-                className="mx-auto mt-36 hidden sm:block"
+                className="mx-auto mt-36 mb-24 hidden sm:block"
                 src="/public/study.png"
                 alt="Study"
               />{" "}

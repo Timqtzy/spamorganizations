@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import "tailwindcss/tailwind.css";
+import { useMediaQuery } from "react-responsive";
 
-const YourComponent = () => {
+const TimeLine = () => {
   const { ref: sectionRef, inView: sectionInView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -125,9 +126,11 @@ const YourComponent = () => {
     },
     // End
   ];
+
   const [currentPage, setCurrentPage] = useState(0);
   const eventsPerPage = 6;
   const eventContainerRef = useRef(null);
+  const isSmScreen = useMediaQuery({ query: "(max-width: 640px)" });
 
   const handleNext = () => {
     setCurrentPage((prevPage) =>
@@ -146,101 +149,126 @@ const YourComponent = () => {
     (currentPage + 1) * eventsPerPage
   );
 
+  const checksScreen = (index) => {
+    if (index % 2 === 0) {
+      return "mb-8 flex justify-between items-center w-full flex-row-reverse left-timeline";
+    } else if (index % 2 === 0 || isSmScreen) {
+      return "mb-8 flex justify-between items-center w-full flex-row-reverse left-timeline";
+    } else {
+      return "mb-8 flex justify-between items-center w-full right-timeline";
+    }
+  };
+
+  const checkSmallScreen = () => {
+    let baseStyle = "absolute h-full border-2 border-red-400 rounded ";
+    if (isSmScreen) {
+      return `${baseStyle} left-0`;
+    } else {
+      return `${baseStyle} right-1/2`;
+    }
+  };
+
   return (
     <div
       className="mx-auto max-w-7xl text-center px-4 pt-24"
       ref={eventContainerRef}
     >
+      {" "}
       <section
+        className={`section animate-fade-in ${sectionInView ? "in-view" : ""}`}
         ref={sectionRef}
-        className={`${sectionInView ? "animate-fade-in" : "opacity-0"}`}
       >
+        {" "}
         <div className="bg-white text-white">
-          <div className="mx-auto  flex flex-col  lg:flex-row slg:flex-row items-start">
+          {" "}
+          <div className="mx-auto flex flex-col lg:flex-row items-start">
+            {" "}
             <div className="flex flex-col w-full lg:sticky md:top-36 lg:w-1/3 mt-2 md:my-12 py-8 md:px-8 s:px-0 sm:px-0 ssm:px-0">
+              {" "}
               <p className="ml-2 text-red-400 uppercase tracking-loose">
+                {" "}
                 Events{" "}
-              </p>
-              <p className="text-3xl font-bold text-red-700 md:text-4xl leading-normal md:leading-relaxed mb-2">
-                Programs And Project{" "}
-              </p>
-              <p className="text-sm md:text-base text-gray-500 mb-4">
+              </p>{" "}
+              <p className="text-3xl font-bold text-red-700 leading-relaxed mb-2">
+                {" "}
+                Programs And Projects{" "}
+              </p>{" "}
+              <p className="text-sm text-gray-500 mb-4">
+                {" "}
                 This is your reference for the events and programs. Follow all
-                the steps to understand the timeline.
-              </p>
-              <a
+                the steps to understand the timeline.{" "}
+              </p>{" "}
+              {/*<a
                 href="#end"
-                className="bg-transparent mr-auto mx-auto hover:bg-customRedHover text-red-400 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-customRed hover:border-transparent"
+                className="bg-transparent hover:bg-customRedHover text-red-400 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-customRed hover:border-transparent transform transition-all duration-[300ms] ease-in delay-[100ms]"
               >
-                SKIP
-              </a>
-            </div>
-            <div className=" lg:w-2/3 sticky">
-              <div className=" mx-auto w-full h-full">
-                <div className="relative wrap overflow-hidden p-10 s:p-0  sm:pb-4  h-full">
-                  <div
-                    className="border-2  absolute h-full  border-red-400 rounded"
-                    style={{ right: "50%" }}
-                  ></div>
-                  <div
-                    className="border-2  absolute h-full border-red-400 rounded"
-                    style={{ left: "50%" }}
-                  ></div>
-                  {displayedEvents.map((event, index) => (
+                {" "}
+                SKIP{" "}
+              </a>{" "}
+              */}
+            </div>{" "}
+            <div className="lg:w-2/3 sticky">
+              {" "}
+              <div className="relative wrap overflow-hidden p-10 s:p-2 ssm:p-2 sm:p-2 md:p-4">
+                {" "}
+                {/* Vertical Borders */}{" "}
+                <div className={checkSmallScreen()}></div> {/* Render Events */}{" "}
+                {displayedEvents.map((event, index) => (
+                  <div key={index} className={checksScreen(index)}>
+                    {" "}
                     <div
-                      key={index}
-                      className={`mb-8 flex justify-between ${
-                        index % 2 === 0
-                          ? "flex-row-reverse items-center w-full left-timeline"
-                          : "items-center w-full right-timeline"
-                      }`}
+                      className={`order-1${isSmScreen ? "w-0" : "w-5/12"}`}
+                    ></div>{" "}
+                    <div
+                      className={`order-1 px-4 py-4 text-left ${isSmScreen ? "w-full" : "w-5/12"}`}
                     >
-                      <div className="order-1 w-5/12"></div>
-                      <div className="order-1 w-5/12 px-1 py-4 text-left">
-                        <p className="mb-3 text-base text-red-400">
-                          {event.date}
-                        </p>
-                        <h4 className="mb-3 font-bold text-md text-customRed">
-                          {event.title}
-                        </h4>
-                        <p className="text-sm md:text-base leading-snug text-left text-gray-500 text-opacity-100">
-                          {event.Theme}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="flex justify-between">
-                  <button
-                    className="bg-transparent hover:bg-customRedHover text-red-400 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-customRed hover:border-transparent"
-                    onClick={handlePrevious}
-                    disabled={currentPage === 0}
-                  >
-                    Previous
-                  </button>
-                  <button
-                    className="bg-transparent hover:bg-customRedHover text-red-400 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-customRed hover:border-transparent"
-                    onClick={handleNext}
-                    disabled={
-                      currentPage ===
-                      Math.ceil(events.length / eventsPerPage) - 1
-                    }
-                  >
-                    Next
-                  </button>
-                </div>
-                <img
-                  className="mx-auto mt-36 md:mt-36 hidden sm:block"
-                  src="/public/study.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                      {" "}
+                      <p className="mb-3 text-base text-red-400">
+                        {" "}
+                        {event.date}{" "}
+                      </p>{" "}
+                      <h4 className="mb-3 font-bold text-md text-customRed">
+                        {" "}
+                        {event.title}{" "}
+                      </h4>{" "}
+                      <p className="text-sm leading-snug text-gray-500">
+                        {" "}
+                        {event.Theme}{" "}
+                      </p>{" "}
+                    </div>{" "}
+                  </div>
+                ))}{" "}
+              </div>{" "}
+              {/* Pagination Controls */}{" "}
+              <div className="flex justify-between mt-8 mb-24 sm:mb-12">
+                {" "}
+                <button
+                  className={`px-4 py-2 text-sm font-medium rounded-sm mx-2 transform transition-all duration-[300ms] ease-in delay-[100ms] ${currentPage === 0 ? "bg-transparent hover:bg-customRedHover text-red-400 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-customRed hover:border-transparent cursor-not-allowed" : "bg-transparent hover:bg-customRedHover text-red-400 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-customRed hover:border-transparent cursor-pointer"}`}
+                  onClick={handlePrevious}
+                  disabled={currentPage === 0}
+                >
+                  {" "}
+                  Previous{" "}
+                </button>{" "}
+                <button
+                  className={`px-4 py-2 text-sm font-medium rounded-sm mx-2 transform transition-all duration-[300ms] ease-in delay-[100ms] ${(currentPage + 1) * eventsPerPage >= events.length ? "bg-customRedHover hover:bg-transparent text-white hover:text-red rounded shadow hover:shadow-lg py-2 px-4 border border-customRed hover:border-customRed hover:text-red-400 hover:bg-customRedHover cursor-not-allowed" : "bg-customRedHover hover:bg-transparent text-white hover:text-red rounded shadow hover:shadow-lg py-2 px-4 border border-customRed hover:border-customRed hover:text-red-400 hover:bg-customRedHover cursor-pointer"}`}
+                  onClick={handleNext}
+                  disabled={(currentPage + 1) * eventsPerPage >= events.length}
+                >
+                  {" "}
+                  Next{" "}
+                </button>{" "}
+              </div>{" "}
+              <img
+                className="mx-auto mt-36 hidden sm:block"
+                src="/public/study.png"
+                alt="Study"
+              />{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </section>{" "}
     </div>
   );
 };
-
-export default YourComponent;
+export default TimeLine;

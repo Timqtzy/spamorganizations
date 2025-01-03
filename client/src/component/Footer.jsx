@@ -70,22 +70,41 @@ function Footer() {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-300 hover:text-[#d62926]">Home</a>
+                  <Link to="/" className="text-gray-300 hover:text-[#d62926]">
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-300 hover:text-[#d62926]">About</a>
+                  <Link
+                    to="/about"
+                    className="text-gray-300 hover:text-[#d62926]"
+                  >
+                    About
+                  </Link>
                 </li>
                 <li>
-                  <a className="text-gray-300 hover:text-[#d62926]">Blog</a>
+                  <Link
+                    to="/blog"
+                    className="text-gray-300 hover:text-[#d62926]"
+                  >
+                    Blog
+                  </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/contact"
+                    className="text-gray-300 hover:text-[#d62926]"
+                  >
+                    Contact
+                  </Link>
+                </li>
+                {/*
                 <li>
                   <a className="text-gray-300 hover:text-[#d62926]">
                     Registration
                   </a>
                 </li>
-                <li>
-                  <a className="text-gray-300 hover:text-[#d62926]">Contact</a>
-                </li>
+                */}
               </nav>
             </div>
             <div className="lg:w-1/5 md:w-1/2 w-full px-4">

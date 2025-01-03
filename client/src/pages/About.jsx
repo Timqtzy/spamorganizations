@@ -115,8 +115,66 @@ function About() {
         </section>
       </div>
       */}
+      <div className="bg-gray-100">
+        <div className="mx-auto max-w-7xl text-left px-6 s:px-4 pt-24">
+          <h2 className="text-3xl s:text-2xl font-extrabold text-gray-900">
+            Founding President
+          </h2>
+        </div>
+        <div className="bg-gray-100 pt-8 pb-4 slg:pb-0 px-4 flex flex-col lg:flex-col slg:flex-row lg:items-left slg:items-center max-w-7xl mx-auto">
+          <div className="lg:w-1/2 mr-8 s:mx-auto sm:mx-auto md:mx-auto smd:mx-auto lg:mx-auto slg:mx-0">
+            <img
+              src={Founder}
+              alt="St. Nicolas College Logo"
+              className="mb-4 w-64 h-64 mx-auto ssm:w-96 ssm:h-96 slg:mx-2"
+            />
+          </div>
+          <div className="w-full ">
+            <p className="text-left mb-4 text-lg text-gray-500">
+              <span className="text-red-600">Melanie G. Viloria-Briones </span>{" "}
+              is a passionate advocate for media education and responsible
+              campus journalism, whose dedication stems from her firsthand
+              experiences as a campus journalist and publication moderator.
+              Recognizing the growing need to empower campus journalists and
+              support school paper advisers, she founded the School Press
+              Advisers Movement, Incorporated—a pioneering initiative aimed at
+              transforming journalism education and mentorship in the
+              Philippines.
+            </p>
+            <p className="text-left text-lg text-gray-500">
+              Briones stands as a beacon of excellence, combining her expertise
+              with a relentless drive to inspire responsible reporting and
+              ethical storytelling across the country. Under her leadership, the
+              organization has become a trailblazer in fostering professional
+              growth and guiding campus journalism towards global standards.
+              With the vision of creating a nationally and internationally
+              respected movement, the organization focuses on advancing four
+              critical pillars: Media Technologies, Journalistic Writing,
+              Integrated Marketing Communications and Media Ethics.
+            </p>
+          </div>
+        </div>
+        <div className="pb-24 pt-4 px-4 lg:flex lg:items-center max-w-7xl mx-auto">
+          <div className=" lg:pr-8">
+            <p className="text-left mb-4 text-lg text-gray-500">
+              Through this comprehensive approach, Briones has built a platform
+              that equips future media leaders to navigate an increasingly
+              complex world. Her mission centers on nurturing 21st-century
+              communicators who not only excel in their craft but also
+              contribute meaningfully to society and the environment.
+            </p>
+            <p className="text-left text-lg text-gray-500">
+              Melanie Viloria-Briones continues to inspire a generation of
+              journalists and educators to uphold the principles of integrity,
+              innovation, and impactful storytelling. Her work ensures that
+              campus journalism remains a force for good, shaping the voices of
+              tomorrow.
+            </p>
+          </div>
+        </div>
+      </div>
       <div>
-        <section className="py-12 bg-gray-100">
+        <section className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row">
               <div className="flex-1 lg:w-1/3 mb-6 lg:mb-0">
@@ -135,7 +193,7 @@ function About() {
             </div>
           </div>
         </section>
-        <section className="py-12 bg-white">
+        <section className="py-12 bg-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row">
               <div className="flex-1 lg:w-1/3 mb-6 lg:mb-0">
@@ -156,7 +214,7 @@ function About() {
       </div>
 
       <div>
-        <section className="py-12 bg-gray-100">
+        <section className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row">
               <div className="flex-1 lg:w-1/3 mb-6 lg:mb-0">
@@ -189,7 +247,7 @@ function About() {
             </div>
           </div>
         </section>
-        <section className="py-12 bg-white">
+        <section className="py-12 bg-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row">
               <div className="flex-1 lg:w-1/3 mb-6 lg:mb-0">
@@ -272,72 +330,10 @@ function About() {
         </section>
         */}
       </div>
-
-      <div className="bg-gray-100">
-        <div className="mx-auto max-w-7xl text-center px-6 pt-24">
-          <h2 className="text-3xl font-extrabold text-gray-900">
-            Founding President
-          </h2>
-        </div>
-        <div className="bg-gray-100 pt-8 pb-4 slg:pb-0 px-4 flex flex-col lg:flex-col slg:flex-row lg:items-left slg:items-center max-w-7xl mx-auto">
-          <div className="lg:w-1/2 mr-8 s:mx-auto sm:mx-auto md:mx-auto smd:mx-auto lg:mx-auto slg:mx-0">
-            <img
-              src={Founder}
-              alt="St. Nicolas College Logo"
-              className="mb-4 w-64 h-64 mx-auto ssm:w-96 ssm:h-96 slg:mx-2"
-            />
-          </div>
-          <div className="w-full ">
-            <p className="text-left mb-4 text-lg text-gray-500">
-              <span className="text-red-600">Melanie G. Viloria-Briones </span>{" "}
-              is a passionate advocate for media education and responsible
-              campus journalism, whose dedication stems from her firsthand
-              experiences as a campus journalist and publication moderator.
-              Recognizing the growing need to empower campus journalists and
-              support school paper advisers, she founded the School Press
-              Advisers Movement, Incorporated—a pioneering initiative aimed at
-              transforming journalism education and mentorship in the
-              Philippines.
-            </p>
-            <p className="text-left text-lg text-gray-500">
-              Briones stands as a beacon of excellence, combining her expertise
-              with a relentless drive to inspire responsible reporting and
-              ethical storytelling across the country. Under her leadership, the
-              organization has become a trailblazer in fostering professional
-              growth and guiding campus journalism towards global standards.
-              With the vision of creating a nationally and internationally
-              respected movement, the organization focuses on advancing four
-              critical pillars: Media Technologies, Journalistic Writing,
-              Integrated Marketing Communications and Media Ethics.
-            </p>
-          </div>
-        </div>
-        <div className="pb-24 pt-4 px-4 lg:flex lg:items-center max-w-7xl mx-auto">
-          <div className=" lg:pr-8">
-            <p className="text-left mb-4 text-lg text-gray-500">
-              Through this comprehensive approach, Briones has built a platform
-              that equips future media leaders to navigate an increasingly
-              complex world. Her mission centers on nurturing 21st-century
-              communicators who not only excel in their craft but also
-              contribute meaningfully to society and the environment.
-            </p>
-            <p className="text-left text-lg text-gray-500">
-              Melanie Viloria-Briones continues to inspire a generation of
-              journalists and educators to uphold the principles of integrity,
-              innovation, and impactful storytelling. Her work ensures that
-              campus journalism remains a force for good, shaping the voices of
-              tomorrow.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <div className="">
         <TimeLine />
       </div>
-      <div className="" id="end">
-        <h2>Henlo</h2>
-      </div>
+      <div className="" id="end"></div>
       <div className="fixed bottom-4 right-4 z-10">
         {" "}
         <button

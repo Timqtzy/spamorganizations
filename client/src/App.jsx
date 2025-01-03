@@ -29,7 +29,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/register" element={<Register />} />
+            {/*<Route path="/register" element={<Register />} /> */}
             <Route path="/cmsevent" element={<CmsEvent />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

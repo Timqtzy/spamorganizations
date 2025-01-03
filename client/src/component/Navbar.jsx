@@ -99,6 +99,7 @@ function Navbar() {
                 Blog
               </NavLink>
             </li>
+            {/*
             <li className="transition duration-300 ease-in delay-100">
               <NavLink
                 to="/register"
@@ -111,6 +112,7 @@ function Navbar() {
                 Registration
               </NavLink>
             </li>
+            */}
             <li className="transition duration-300 ease-in delay-100">
               <NavLink
                 to="/contact"

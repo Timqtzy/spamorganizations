@@ -50,117 +50,83 @@ const YourComponent = () => {
     },
 
     {
-      date: "September, 12-13",
+      date: "September, 12-13, 2013",
       title:
         "7th Annual National Convention and Seminar- Workshop, 4th SPAM's National Journalism Quiz Bee: PAMBANSANG PAUTAKANG PAMPAHAYAGAN 2013 and 1st International- Cultural Exchange",
       Theme:
         "Intensifying the Power of Campus Paper in Protecting and Preserving the Environment and Natural Resources.",
     },
-
-    // Second Page
-
     {
-      date: "July 18-20, 2007",
-      title: "1st Annual National Convention and Seminar-Workshop",
-      Theme:
-        "Reshaping Campus Journalism: An Adherence to the Modern Print Media of the 21st Century.",
-    },
-    {
-      date: "August 20-22, 2008",
-      title: "2nd Annual National Convention and Seminar- Workshop",
-      Theme: "Gearing towards a Free and Responsible Campus Journalism.",
-    },
-
-    {
-      date: "August 24-26, 2009",
-      title: "3rd Annual National Convention and Seminar- Workshop",
-      Theme: "A Drift towards Responsible Campus Journalism.",
-    },
-    {
-      date: "July 28-30, 2010",
+      date: "September, 11-13, 2014",
       title:
-        "4th Annual National Convention and Seminar- Workshop and the 1st SPAM's SPAM's National Journalism Quiz Bee: PAMBANSANG PAUTAKANG PAMPAHAYAGAN 2010",
+        "8th Annual National Media Conference and Seminar-Workshop, 5th SPAM's National Journalism Quiz Bee: PAMBANSANG PAUTAKANG PAMPAHAYAGAN 2014 and 2nd International Cultural Exchange",
       Theme:
-        "COOL MEDIA: Empowering Campus Journalists Towards Public Critical Involvement.",
+        "Inculcating the Essence of Truth, Credibility and Morality in Campus Journalism Amidst Global Changes.",
+    },
+    {
+      date: "April 28-30, 2015",
+      title: "Extramural 2015 Training of Advisers and Students",
+      Theme:
+        "Going beyond the Conventional: Training the Trainers, Campus Press and Communication Students.",
     },
 
     {
-      date: "August 3-5, 2011",
+      date: "October 27-29, 2015",
       title:
-        "5th Annual National Convention and Seminar- Workshop and the 2nd SPAM's 2nd SPAM's National Journalism Quiz Bee: PAMBANSANG PAUTAKANG PAMPAHAYAGAN 2011",
+        "9th Annual National Media Conference, 6th National Journalism Quiz Bee: Pambansang Pautakang Pampahayagan and 3rd Inter-Cultural Exchange",
       Theme:
-        "Keeping the Tradition of Campus Journalism amidst the Influential Electronic Media.",
+        "Responding to the Challenges and Demands of Responsible Campus Journalism.",
     },
     {
-      date: "August 22-24, 2012",
+      date: "April 28-30, 2015",
+      title: "3rd Extramural Training and 1st Poetry Out Loud Competition",
+      Theme: "Unifying Campus Journalists Amidst Diversity.",
+    },
+
+    {
+      date: "October 26-28, 2016",
       title:
-        "6th Annual National Convention and Seminar- Workshop and the 3rd SPAM's SPAM's National Journalism Quiz Bee: PAMBANSANG PAUTAKANG PAMPAHAYAGAN 2012",
+        "10th Annual National Media Conference, 7th Pautakang Pampahayagan and 4th I-Documento",
       Theme:
-        "Utilizing the Influence of Campus Paper in Promoting Filipino Culture Across Regions.",
+        "Exhibiting Gender Sensitivity through Ethical and Responsible Campus Journalism Proponent: Dr. Melanie Viloria-Briones.",
+    },
+    {
+      date: "April 27-29, 2017",
+      title: "4th Extramural Training and 2nd Poetry Out Loud Competition",
+      Theme: "Getting into the Stride of Responsible and Innovative Writing.",
     },
 
     {
-      date: "September, 12-13",
+      date: "September 13-15, 2017",
       title:
-        "7th Annual National Convention and Seminar- Workshop, 4th SPAM's National Journalism Quiz Bee: PAMBANSANG PAUTAKANG PAMPAHAYAGAN 2013 and 1st International- Cultural Exchange",
+        "11th National Media Conference, 5th Training of School Paper Advisers and 8th Pautakang Pampahayagan",
+      Theme: "Advocating Ethical Campus Journalism Amidst Social Challenges.",
+    },
+
+    {
+      date: "September 12-14, 2018",
+      title: "12th National Media Conference",
       Theme:
-        "Intensifying the Power of Campus Paper in Protecting and Preserving the Environment and Natural Resources.",
+        "Embracing Integration in a Borderless Society and in Cyberspace Through Campus Journalism.",
     },
-
-    // Third Page
-
     {
-      date: "July 18-20, 2007",
-      title: "1st Annual National Convention and Seminar-Workshop",
+      date: "September 11-13, 2019",
+      title: "13th National Campus Media Conference",
       Theme:
-        "Reshaping Campus Journalism: An Adherence to the Modern Print Media of the 21st Century.",
-    },
-    {
-      date: "August 20-22, 2008",
-      title: "2nd Annual National Convention and Seminar- Workshop",
-      Theme: "Gearing towards a Free and Responsible Campus Journalism.",
+        "Fostering an Upright Campus Journalism in the Era of Generation C.",
     },
 
     {
-      date: "August 24-26, 2009",
-      title: "3rd Annual National Convention and Seminar- Workshop",
-      Theme: "A Drift towards Responsible Campus Journalism.",
-    },
-    {
-      date: "July 28-30, 2010",
+      date: "November 8-10, 2023",
       title:
-        "4th Annual National Convention and Seminar- Workshop and the 1st SPAM's SPAM's National Journalism Quiz Bee: PAMBANSANG PAUTAKANG PAMPAHAYAGAN 2010",
+        "14th National Campus Media Conference and 1st International Media Research Conference",
       Theme:
-        "COOL MEDIA: Empowering Campus Journalists Towards Public Critical Involvement.",
+        "Promoting Evidence-based Journalism in the Reel World of Al and Social Media Influencers Proponent: Mr. Carlito Apolinario Robin Coordinator: Ms. Leah Murillo Panaguiton.",
     },
-
-    {
-      date: "August 3-5, 2011",
-      title:
-        "5th Annual National Convention and Seminar- Workshop and the 2nd SPAM's 2nd SPAM's National Journalism Quiz Bee: PAMBANSANG PAUTAKANG PAMPAHAYAGAN 2011",
-      Theme:
-        "Keeping the Tradition of Campus Journalism amidst the Influential Electronic Media.",
-    },
-    {
-      date: "August 22-24, 2012",
-      title:
-        "6th Annual National Convention and Seminar- Workshop and the 3rd SPAM's SPAM's National Journalism Quiz Bee: PAMBANSANG PAUTAKANG PAMPAHAYAGAN 2012",
-      Theme:
-        "Utilizing the Influence of Campus Paper in Promoting Filipino Culture Across Regions.",
-    },
-
-    {
-      date: "September, 12-13",
-      title:
-        "7th Annual National Convention and Seminar- Workshop, 4th SPAM's National Journalism Quiz Bee: PAMBANSANG PAUTAKANG PAMPAHAYAGAN 2013 and 1st International- Cultural Exchange",
-      Theme:
-        "Intensifying the Power of Campus Paper in Protecting and Preserving the Environment and Natural Resources.",
-    },
-
     // End
   ];
   const [currentPage, setCurrentPage] = useState(0);
-  const eventsPerPage = 7;
+  const eventsPerPage = 6;
   const eventContainerRef = useRef(null);
 
   const handleNext = () => {
@@ -225,8 +191,8 @@ const YourComponent = () => {
                       key={index}
                       className={`mb-8 flex justify-between ${
                         index % 2 === 0
-                          ? "items-center w-full right-timeline"
-                          : "flex-row-reverse items-center w-full left-timeline"
+                          ? "flex-row-reverse items-center w-full left-timeline"
+                          : "items-center w-full right-timeline"
                       }`}
                     >
                       <div className="order-1 w-5/12"></div>
@@ -264,9 +230,9 @@ const YourComponent = () => {
                   </button>
                 </div>
                 <img
-                  className="mx-auto mt-36 md:-mt-36 hidden sm:block"
-                  src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png"
-                  alt="Your Alt Text"
+                  className="mx-auto mt-36 md:mt-36 hidden sm:block"
+                  src="/public/study.png"
+                  alt=""
                 />
               </div>
             </div>

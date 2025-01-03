@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import "tailwindcss/tailwind.css";
 import { useMediaQuery } from "react-responsive";
-
+import StudyImage from "/public/study.png";
 const TimeLine = () => {
   const { ref: sectionRef, inView: sectionInView } = useInView({
     triggerOnce: true,
@@ -260,7 +260,7 @@ const TimeLine = () => {
               </div>{" "}
               <img
                 className="mx-auto mt-36 mb-24 hidden sm:block"
-                src="/public/study.png"
+                src={StudyImage}
                 alt="Study"
               />{" "}
             </div>{" "}

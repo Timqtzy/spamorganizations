@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "/public/SpamLogo.png";
 
 function Blog() {
   return (
@@ -9,7 +10,7 @@ function Blog() {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <img
-                src="/public/SpamLogo.png"
+                src={Logo}
                 alt="Author"
                 className="w-10 h-10 rounded-full mr-4"
               />

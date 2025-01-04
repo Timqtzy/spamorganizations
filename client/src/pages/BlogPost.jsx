@@ -5,10 +5,11 @@ import axios from "axios";
 const BlogPost = () => {
   const { slug } = useParams();
   const [blog, setBlog] = useState(null);
+  const apiUrl = import.meta.env.API_URL || "http://localhost:5000"; // Replace with the correct URL
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/blogs/${slug}`)
+      .get(`${apiUrl}/api/blogs/${slug}`)
       .then((response) => setBlog(response.data))
       .catch((error) => console.error("Blog not found:", error));
   }, [slug]);

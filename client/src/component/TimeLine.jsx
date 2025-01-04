@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import "tailwindcss/tailwind.css";
 import { useMediaQuery } from "react-responsive";
-import StudyImage from "/public/study.png";
+import StudyImage from "../assets/study.png";
 const TimeLine = () => {
   const { ref: sectionRef, inView: sectionInView } = useInView({
     triggerOnce: true,

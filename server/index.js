@@ -401,6 +401,33 @@ app.post("/data", async (req, res) => {
   }
 });
 
+
+const blogSchema = new mongoose.Schema({
+  title: String,
+  slug: String,
+  content: String,
+  author: String,
+});
+
+const Blog = mongoose.model("Blog", blogSchema);
+
+// Routes
+// Fetch all blogs
+app.get("/api/blogs", async (req, res) => {
+  const blogs = await Blog.find();
+  res.json(blogs);
+});
+
+// Fetch a single blog by slug
+app.get("/api/blogs/:slug", async (req, res) => {
+  const blog = await Blog.findOne({ slug: req.params.slug });
+  if (blog) {
+    res.json(blog);
+  } else {
+    res.status(404).send("Blog not found");
+  }
+});
+
 app.post("/subscribe", async (req, res) => {
   const { email } = req.body;
 

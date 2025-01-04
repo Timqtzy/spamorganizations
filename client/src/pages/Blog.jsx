@@ -12,7 +12,7 @@ const Blog = () => {
     axios
       .get(`${apiUrl}/api/blogs`)
       .then((response) => setBlogs(response.data))
-      .catch((error) => console.error("Blog not found:", error));
+      .catch((error) => console.error("Blog not found in Blog page:", error));
   }, []);
 
   // Sort blogs by most recent (assuming data has a `createdAt` field)

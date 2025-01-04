@@ -5,6 +5,7 @@ import axios from "axios";
 const BlogPost = () => {
   const { slug } = useParams();
   const [blog, setBlog] = useState(null);
+  
   const apiUrl = import.meta.env.API_URL || "http://localhost:5000"; // Replace with the correct URL
 
   useEffect(() => {

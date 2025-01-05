@@ -54,11 +54,6 @@ dataSchema.index({ email: 1 }, { unique: true });
 
 const Data = mongoose.model("Data", dataSchema);
 
-// MailerSend configuration
-const MAILERSEND_API_KEY = process.env.MAILERSEND_API_KEY;
-const TEMPLATE_ID = process.env.MAILERSEND_TEMPLATE_ID;
-const FROM_EMAIL = process.env.MAILERSEND_FROM_EMAIL;
-
 // API endpoints
 app.get("/data", async (req, res) => {
   try {
@@ -69,8 +64,7 @@ app.get("/data", async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
-
-app.post("/data", async (req, res) => {
+app.post("/subscribe", async (req, res) => {
   const { email } = req.body;
 
   if (!email) {
@@ -88,11 +82,12 @@ app.post("/data", async (req, res) => {
       return res.status(409).json({ message: "Email already subscribed" });
     }
 
-    const newData = new Data(req.body);
+    const newData = new Data({ email });
     await newData.save();
-    res.status(201).json(newData);
+    res.status(201).json({ message: "Subscribed successfully!" });
   } catch (error) {
-    console.error("Error saving data:", error);
+    console.error("Error saving data:", error.message); // Log error message
+    console.error("Stack trace:", error.stack); // Log stack trace for debugging
     res.status(500).json({ message: "Server error" });
   }
 });
@@ -120,53 +115,6 @@ app.get("/api/blogs/:slug", async (req, res) => {
     res.json(blog);
   } else {
     res.status(404).send("Blog not found");
-  }
-});
-
-app.post("/subscribe", async (req, res) => {
-  const { email } = req.body;
-
-  if (!email) {
-    return res.status(400).json({ message: "Email is required" });
-  }
-
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    return res.status(400).json({ message: "Invalid email format" });
-  }
-
-  try {
-    const existingEmail = await Data.findOne({ email });
-    if (existingEmail) {
-      return res.status(409).json({ message: "Email already subscribed" });
-    }
-
-    const newEmail = new Data({ email, subscribe: true });
-    await newEmail.save();
-
-    // Send email using MailerSend
-    await axios.post(
-      "https://api.mailersend.com/v1/email",
-      {
-        from: { email: FROM_EMAIL },
-        to: [{ email }],
-        template_id: TEMPLATE_ID,
-      },
-      {
-        headers: {
-          Authorization: `Bearer ${MAILERSEND_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-      }
-    );
-
-    res.status(201).json({ message: "Subscribed successfully and email sent" });
-  } catch (error) {
-    console.error("Error saving email or sending subscription email:", error);
-    if (error.code === 11000) {
-      return res.status(409).json({ message: "Email already subscribed" });
-    }
-    res.status(500).json({ message: "Server error" });
   }
 });
 

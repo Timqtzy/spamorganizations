@@ -6,7 +6,10 @@ import Logo from "../assets/SpamLogo.png";
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
 
-  const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000"; // Replace with the correct URL
+  {
+    /*const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000"; // Replace with the correct URL*/
+  }
+  const apiUrl = "http://localhost:5000"; // Replace with the correct URL
 
   useEffect(() => {
     axios

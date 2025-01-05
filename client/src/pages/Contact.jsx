@@ -26,7 +26,7 @@ function Contact() {
         "service_1dwg75v",
         "template_ovhkxfr",
         e.target,
-        "QzFKLAgJvWRhTyJsh"
+        "xihxtDpi_xF3RVdTS"
       )
       .then(
         (result) => {

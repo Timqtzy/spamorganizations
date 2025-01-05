@@ -6,8 +6,12 @@ const BlogPost = () => {
   const { slug } = useParams();
   const [blog, setBlog] = useState(null);
 
-  const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000"; // Replace with the correct URL
+  {
+    /*const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:5000"; // Replace with the correct URL*/
+  }
+  const apiUrl = "http://localhost:5000"; // Replace with the correct URL
 
+  
   useEffect(() => {
     axios
       .get(`${apiUrl}/api/blogs/${slug}`)

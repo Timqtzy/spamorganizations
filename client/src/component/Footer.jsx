@@ -19,13 +19,17 @@ function Footer() {
       setShowToast(false);
     }, 3000);
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
 
     try {
+      {
+        /*const API_URL = "http://localhost:5000"; // Replace with the correct URL*/
+      }
+
       const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
       const response = await fetch(`${API_URL}/subscribe`, {
         method: "POST",
         headers: {
@@ -34,20 +38,25 @@ function Footer() {
         body: JSON.stringify({ email }),
       });
 
-      const data = await response.json();
-      // Handle already subscribed email (409 conflict)
-      if (response.status === 409) {
-        showToastNotification("This email is already subscribed.", "error");
-        return; // Exit early, no need to proceed with the rest of the logic
-      }
-      if (response.ok) {
-        showToastNotification("Subscribed successfully!", "success");
-        setEmail("");
-      } else {
+      if (!response.ok) {
+        // Log response status and statusText for debugging
+        console.error("Fetch error:", response.status, response.statusText);
+        const data = await response.json();
+
+        if (response.status === 409) {
+          showToastNotification("This email is already subscribed.", "error");
+          return;
+        }
+
         const errorMessage =
           data.message || "Failed to subscribe. Please try again.";
         showToastNotification(errorMessage, "error");
+        return;
       }
+
+      const data = await response.json();
+      showToastNotification("Subscribed successfully!", "success");
+      setEmail("");
     } catch (error) {
       console.error("Subscription error:", error);
       showToastNotification(

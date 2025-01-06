@@ -25,7 +25,7 @@ function Navbar() {
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <img src={logo} className="h-8" alt="Spam Logo" />
+          <img src={logo} className="h-12" alt="Spam Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             SPAM
           </span>

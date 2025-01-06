@@ -32,9 +32,13 @@ export default {
       },
       screens: {
         s: "0px",
+        sx: "320px",
+        ssx: "375px",
+        xsm: "414px",
         ssm: "448px",
         sm: "640px",
         md: "768px",
+        msd: "782px",
         smd: "944px",
         lg: "1024px",
         slg: "1260px",

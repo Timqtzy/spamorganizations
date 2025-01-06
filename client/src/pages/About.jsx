@@ -130,7 +130,7 @@ function About() {
             />
           </div>
           <div className="w-full ">
-            <p className="text-left mb-4 text-lg text-gray-500">
+            <p className="text-justify mb-4 text-lg text-gray-500">
               <span className="text-red-600">Melanie G. Viloria-Briones </span>{" "}
               is a passionate advocate for media education and responsible
               campus journalism, whose dedication stems from her firsthand
@@ -141,7 +141,7 @@ function About() {
               transforming journalism education and mentorship in the
               Philippines.
             </p>
-            <p className="text-left text-lg text-gray-500">
+            <p className="text-justify text-lg text-gray-500">
               Briones stands as a beacon of excellence, combining her expertise
               with a relentless drive to inspire responsible reporting and
               ethical storytelling across the country. Under her leadership, the
@@ -156,14 +156,14 @@ function About() {
         </div>
         <div className="pb-24 pt-4 px-4 lg:flex lg:items-center max-w-7xl mx-auto">
           <div className=" lg:pr-8">
-            <p className="text-left mb-4 text-lg text-gray-500">
+            <p className="text-justify mb-4 text-lg text-gray-500">
               Through this comprehensive approach, Briones has built a platform
               that equips future media leaders to navigate an increasingly
               complex world. Her mission centers on nurturing 21st-century
               communicators who not only excel in their craft but also
               contribute meaningfully to society and the environment.
             </p>
-            <p className="text-left text-lg text-gray-500">
+            <p className="text-justify text-lg text-gray-500">
               Melanie Viloria-Briones continues to inspire a generation of
               journalists and educators to uphold the principles of integrity,
               innovation, and impactful storytelling. Her work ensures that

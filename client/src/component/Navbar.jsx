@@ -8,7 +8,7 @@ function Navbar() {
   const location = useLocation();
 
   const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
   };
 
   const isActive = (path) => {
@@ -19,112 +19,68 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-50 shadow-md shadow-customNavCol">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
-        <NavLink
-          to="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-50 shadow-md">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <NavLink to="/" className="flex items-center space-x-3">
           <img src={logo} className="h-12" alt="Spam Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="hidden xsm:inline self-center text-base md:text-lg lg:text-2xl font-semibold whitespace-nowrap dark:text-white">
+            {" "}
+            School Press Advisers'{" "}
+            <span className="block xsm:inline">Movement, Inc.</span>{" "}
+          </span>
+          <span className="xsm:hidden self-center text-base md:text-lg lg:text-2xl font-semibold whitespace-nowrap dark:text-white">
             SPAM
           </span>
         </NavLink>
         <button
-          data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded={isMenuOpen}
           onClick={handleMenuToggle}
         >
           <span className="sr-only">Open main menu</span>
           <svg
-            className="w-5 h-5"
-            aria-hidden="true"
+            className="w-6 h-6"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
-            viewBox="0 0 17 14"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
             <path
-              stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
+              strokeWidth={2}
+              d={
+                isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+              }
             />
           </svg>
         </button>
         <div
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } w-full md:block md:w-auto`}
+          } w-full msd:block msd:w-auto`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li className="transition duration-300 ease-in delay-100">
-              <NavLink
-                to="/"
-                className={
-                  isActive("/")
-                    ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
-                    : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                }
-                aria-current={isActive("/") ? "page" : undefined}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li className="transition duration-300 ease-in delay-100">
-              <NavLink
-                to="/about"
-                className={
-                  isActive("/about")
-                    ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
-                    : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                }
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="transition duration-300 ease-in delay-100">
-              <NavLink
-                to="/blog"
-                className={
-                  isActive("/blog")
-                    ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
-                    : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                }
-              >
-                Blog
-              </NavLink>
-            </li>
-            {/*
-            <li className="transition duration-300 ease-in delay-100">
-              <NavLink
-                to="/register"
-                className={
-                  isActive("/register")
-                    ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
-                    : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                }
-              >
-                Registration
-              </NavLink>
-            </li>
-            */}
-            <li className="transition duration-300 ease-in delay-100">
-              <NavLink
-                to="/contact"
-                className={
-                  isActive("/contact")
-                    ? "block py-2 px-3 text-white bg-customRed rounded md:bg-transparent md:text-customRed md:p-0 dark:text-white md:dark:text-customRed"
-                    : "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-customRed md:p-0 dark:text-white md:dark:hover:text-customRed dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                }
-              >
-                Contact
-              </NavLink>
-            </li>
+          <ul className="font-medium flex flex-col md:flex-row md:space-x-6 p-4 md:p-0 mt-4 md:mt-0 bg-gray-50 md:bg-transparent rounded-lg border border-gray-100 md:border-0 dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+            {["/", "/about", "/blog", "/contact"].map((path) => (
+              <li key={path} className="transition duration-300 ease-in-out">
+                <NavLink
+                  to={path}
+                  className={`block py-2 px-4 rounded ${
+                    isActive(path)
+                      ? "text-white bg-customRed md:bg-transparent md:text-customRed"
+                      : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-customRed dark:text-white dark:hover:bg-gray-700"
+                  }`}
+                  aria-current={isActive(path) ? "page" : undefined}
+                >
+                  {path === "/"
+                    ? "Home"
+                    : path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

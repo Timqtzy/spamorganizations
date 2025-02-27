@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import member1 from "../TeamImage/member-1.png";
-import member2 from "../TeamImage/member-2.png";
-import member3 from "../TeamImage/member-3.png";
-import member4 from "../TeamImage/member-4.png";
-import member5 from "../TeamImage/member-5.png";
-import member6 from "../TeamImage/member-6.png";
+import member1 from "../AboutTeamImg/Melanie Briones.png";
+import member2 from "../AboutTeamImg/Richard N. Briones.png";
+import member3 from "../AboutTeamImg/Jonathan Sta. Ana.png";
+import member4 from "../AboutTeamImg/Alice R. Ramos.jpg";
+import member5 from "../AboutTeamImg/Lydia S. Villanueva.jpg";
+import member6 from "../AboutTeamImg/June B. Mijares.jpg";
+import member7 from "../AboutTeamImg/Cristina B. Reyes.jpg";
+import member8 from "../AboutTeamImg/Richy Lloyd M. Tan.png";
 
 const teamMembers = [
   {
@@ -39,14 +41,14 @@ const teamMembers = [
     image: member6,
   },
   {
-    name: "Lydia S. Villanueva",
-    role: "Vice-President Internal",
-    image: member5,
+    name: "Cristina B. Reyes",
+    role: "VP for Luzon",
+    image: member7,
   },
   {
-    name: "June B. Mijares",
-    role: "VP for Advocacy Affairs",
-    image: member6,
+    name: "Richy Lloyd M. Tan",
+    role: "VP for Visayas",
+    image: member8,
   },
 ];
 

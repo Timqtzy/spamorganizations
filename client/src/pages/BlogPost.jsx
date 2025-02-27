@@ -24,14 +24,14 @@ const BlogPost = () => {
 
   if (!blog) {
     return (
-      <div className="bg-gray-100 py-12 lg:py-24 px-4 min-h-screen">
+      <div className="bg-gray-100 py-12  px-4 min-h-screen">
         <div
           role="status"
-          class="max-w-4xl mx-auto p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700"
+          className="max-w-4xl mx-auto p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700"
         >
-          <div class="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
+          <div className="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
             <svg
-              class="w-10 h-10 text-gray-200 dark:text-gray-600"
+              className="w-10 h-10 text-gray-200 dark:text-gray-600"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -41,9 +41,9 @@ const BlogPost = () => {
               <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z" />
             </svg>
           </div>
-          <div class="flex items-center mt-4">
+          <div className="flex items-center mt-4">
             <svg
-              class="w-10 h-10 me-3 text-gray-200 dark:text-gray-700"
+              className="w-10 h-10 me-3 text-gray-200 dark:text-gray-700"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -53,27 +53,27 @@ const BlogPost = () => {
             </svg>
           </div>
           <div>
-            <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32 mb-2"></div>
-            <div class="w-48 h-2 bg-gray-200 rounded-full dark:bg-gray-700  mb-4"></div>
+            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32 mb-2"></div>
+            <div className="w-48 h-2 bg-gray-200 rounded-full dark:bg-gray-700  mb-4"></div>
           </div>
-          <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-          <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
-          <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+          <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+          <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+          <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
 
-          <span class="sr-only">Loading...</span>
+          <span className="sr-only">Loading...</span>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="bg-gray-100 py-12 lg:py-24 px-4 min-h-screen">
+    <div className="bg-gray-100 py-12 px-4 min-h-screen">
       <section className="max-w-4xl mx-auto pb-2 sm:pb-4">
         <nav className="flex" aria-label="Breadcrumb">
           <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
             <Link to="/blog">
               <li className="inline-flex items-center">
-                <a
+                <p
                   href="#"
                   className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-red-600 dark:text-gray-400 dark:hover:text-white transform transition-all duration-[300ms] ease-in delay-[100ms]"
                 >
@@ -87,7 +87,7 @@ const BlogPost = () => {
                     <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
                   </svg>
                   Blog
-                </a>
+                </p>
               </li>
             </Link>
             <li>
@@ -101,18 +101,18 @@ const BlogPost = () => {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="m1 9 4-4-4-4"
                   />
                 </svg>
-                <a
+                <p
                   href="#"
                   className="ms-1 text-sm font-medium text-gray-700 md:ms-2 dark:text-gray-400 dark:hover:text-white"
                 >
                   Read
-                </a>
+                </p>
               </div>
             </li>
           </ol>

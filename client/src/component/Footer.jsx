@@ -192,6 +192,7 @@ function Footer() {
                 src={logo}
                 alt="Spam Logo"
                 className="w-10 h-10 text-white rounded-full"
+                loading="lazy"
               />
               <span className="ml-3 text-xl text-customRed">SPAM</span>{" "}
             </a>

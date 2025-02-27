@@ -92,12 +92,15 @@ app.post("/subscribe", async (req, res) => {
   }
 });
 
-const blogSchema = new mongoose.Schema({
-  title: String,
-  slug: String,
-  content: String,
-  author: String,
-});
+const blogSchema = new mongoose.Schema(
+  {
+    title: String,
+    slug: String,
+    content: String,
+    author: String,
+  },
+  { collection: "cards" }
+);
 
 const Blog = mongoose.model("Blog", blogSchema);
 

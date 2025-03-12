@@ -336,11 +336,11 @@ const TeamSection = () => {
   return (
     <section className="py-24 my-4 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        <div className="text-center ">
           <h2 className="text-base font-semibold text-red-700 tracking-wide uppercase">
             Meet our team
           </h2>
-          <p className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl py-8">
+          <p className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl py-4">
             Meet Our Diverse Team
           </p>
           <div className="flex justify-center mt-2">

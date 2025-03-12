@@ -5,6 +5,8 @@ import Logo from "../assets/SpamLogo.png";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
+  // const apiUrl = "http://localhost:5000"; // Replace with the correct URL
+
   const apiUrl = import.meta.env.VITE_API_URL; // Replace with the correct URL
 
   useEffect(() => {
@@ -50,21 +52,21 @@ const Blog = () => {
 
 // Memoized Main Article Component
 const MainArticleSection = React.memo(({ blog }) => (
-  <div className="md:col-span-2">
+  <div className="md:col-span-2 bg-white px-8 py-6  mb-4 rounded-lg">
     <div className="flex items-center mb-4">
       <img
         src={Logo}
         alt="Author"
-        className="w-10 h-10 rounded-full mr-4"
+        className="w-10 h-10 rounded-full mr-3"
         loading="lazy"
       />
-      <div>
+      <div className="flex flex-col leading-tight">
         <h4 className="font-medium text-gray-800">{blog.author}</h4>
         <span className="text-sm text-gray-500">Author</span>
       </div>
     </div>
-    <Link to={`/blog/${blog.slug}`}>
-      <h1 className="text-3xl font-bold text-gray-800 mb-4 hover:underline">
+    <Link to={`/newsPost/${blog.slug}`}>
+      <h1 className="text-[18px] sm:text-3xl font-bold text-gray-800 mb-4 hover:underline hover:text-red-700">
         {blog.title}
       </h1>
     </Link>
@@ -74,11 +76,11 @@ const MainArticleSection = React.memo(({ blog }) => (
       </span>
       <span> | {blog.readTime}</span>
     </div>
-    <Link to={`/blog/${blog.slug}`}>
+    <Link to={`/newsPost/${blog.slug}`}>
       <img
         src={blog.image}
         alt={blog.title}
-        className="rounded-lg w-full mb-6 transition-all duration-300 hover:shadow-lg"
+        className="rounded-md w-full mb-6 transition-all duration-300 hover:shadow-lg"
         loading="lazy"
       />
     </Link>
@@ -88,21 +90,21 @@ const MainArticleSection = React.memo(({ blog }) => (
 
 // Memoized Related Articles Component
 const RelatedArticlesSection = React.memo(({ blogs }) => (
-  <div className="space-y-6 md:pt-4">
+  <div className="space-y-4">
     {blogs.map((blog) => (
       <div
         key={blog._id}
-        className="flex items-center bg-white rounded-lg p-4 shadow-sm transition-all duration-300 hover:shadow-lg"
+        className="flex items-center bg-white rounded-lg p-3 shadow-sm transition-all duration-300 hover:shadow-lg"
       >
         <img
           src={blog.image}
           alt={blog.title}
-          className="w-24 h-24 rounded-lg object-cover mr-4"
+          className="w-24 h-24 rounded-md object-cover mr-4"
           loading="lazy"
         />
         <div>
-          <Link to={`/blog/${blog.slug}`}>
-            <h4 className="font-medium text-gray-800 hover:underline">
+          <Link to={`/newsPost/${blog.slug}`}>
+            <h4 className="font-medium text-gray-800 hover:underline hover:text-red-700">
               {blog.title}
             </h4>
           </Link>

@@ -64,7 +64,7 @@ function Navbar() {
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col md:flex-row md:space-x-6 p-4 md:p-0 mt-4 md:mt-0 bg-gray-50 md:bg-transparent rounded-lg border border-gray-100 md:border-0 dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-            {["/", "/about", "/blog", "/contact"].map((path) => (
+            {["/", "/about", "/news", "/contact"].map((path) => (
               <li key={path} className="transition duration-300 ease-in-out">
                 <NavLink
                   to={path}

@@ -5,8 +5,8 @@ import Home from "./pages/HomePage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import CmsEvent from "./component/CmsEvent";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
+import News from "./pages/News";
+import NewsPost from "./pages/NewsPost";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 import LoadingSpinner from "./component/Loading"; // Custom loading animation
@@ -26,8 +26,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/blog/" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/news/" element={<News />} />
+          <Route path="/newsPost/:slug" element={<NewsPost />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cmsevent" element={<CmsEvent />} />
           <Route path="*" element={<NotFound />} />
